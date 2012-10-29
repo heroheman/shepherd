@@ -1,0 +1,12 @@
+%nav{
+    list-style:none;
+    margin-left:0;
+    @extend .cf;
+
+    > li,
+        > li > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+        }
+}

@@ -1,0 +1,12 @@
+// Placeholder
+
+// Offscreen text
+// http://css-tricks.com/redesigning-with-sass/
+%linkTextOffscreen{
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    font-size: 0;
+    text-align: start;
+}
