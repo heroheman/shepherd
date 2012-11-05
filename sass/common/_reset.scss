@@ -4,7 +4,8 @@
 // Author: Richard Clark - http://richclarkdesign.com
 // Twitter: @rich_clark
 
-
+/* $RESET **************/
+/* File: "common/reset.scss" */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -57,14 +58,14 @@ a {
     background:transparent;
 }
 
-/* change colours to suit your needs */
+/* $TODO change colours to suit your needs */
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
 
-/* change colours to suit your needs */
+/* $TODO change colours to suit your needs */
 mark {
     background-color:#ff9;
     color:#000;
@@ -86,7 +87,7 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
+/* $TODO change border colour to suit your needs */
 hr {
     display:block;
     height:1px;

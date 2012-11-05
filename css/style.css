@@ -1,3 +1,5 @@
+/* $RESET **************/
+/* File: "common/reset.scss" */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -43,13 +45,13 @@ a {
   vertical-align: baseline;
   background: transparent; }
 
-/* change colours to suit your needs */
+/* $TODO change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none; }
 
-/* change colours to suit your needs */
+/* $TODO change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
@@ -67,7 +69,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* change border colour to suit your needs */
+/* $TODO change border colour to suit your needs */
 hr {
   display: block;
   height: 1px;
@@ -79,6 +81,8 @@ hr {
 input, select {
   vertical-align: middle; }
 
+/* $CLEARFIX */
+/* File: "common/clearfix.scss" */
 .row {
   overflow: none;
   *zoom: 1; }
@@ -88,6 +92,8 @@ input, select {
   .row::after {
     clear: both; }
 
+/* GRID */
+/* File: "common/grid.scss" */
 .column, .columns {
   float: left;
   min-height: 1px;
@@ -128,6 +134,38 @@ input, select {
     max-width: none;
     min-width: 0;
     margin: 0 -15px; }
+  .row .push-one {
+    margin-left: 8.33%; }
+  .row .push-two {
+    margin-left: 16.66%; }
+  .row .push-three {
+    margin-left: 25%; }
+  .row .push-four {
+    margin-left: 33.33%; }
+  .row .push-five {
+    margin-left: 41.66%; }
+  .row .push-six {
+    margin-left: 50%; }
+  .row .push-seven {
+    margin-left: 58.33%; }
+  .row .push-eight {
+    margin-left: 66.66%; }
+  .row .push-nine {
+    margin-left: 75%; }
+  .row .push-ten {
+    margin-left: 83.33%; }
+  .row .push-eleven {
+    margin-left: 91.66%; }
+  .row .push-twelve {
+    margin-left: 100%; }
+  .row .mobile-one {
+    width: 25%; }
+  .row .mobile-two {
+    width: 50%; }
+  .row .mobile-three {
+    width: 75%; }
+  .row .mobile-four {
+    width: 100%; }
 
 [class*="column"] + [class*="column"]:last-child {
   float: right; }
@@ -135,17 +173,167 @@ input, select {
 [class*="column"] + [class*="column"].end {
   float: left; }
 
+.column .centered,
+.columns .centered {
+  float: none;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 767px) {
+  .row {
+    width: auto;
+    min-width: 0; }
+
+  .column,
+  .columns {
+    width: auto !important;
+    float: none; }
+    .column:last-child,
+    .columns:last-child {
+      float: none; }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: none; } }
+/* $TODO: split in separate files? */
+/* Offscreen text */
 /* Site Wide Styles, eg home, body */
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%; }
+
+body {
+  background: white;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 14px; }
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  font-family: Helvetica, Arial, sans-serif;
+  color: black; }
+
+h1, .alpha {
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 26px; }
+
+h2, .beta {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 24px; }
+
+h3, .gamma {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 22px; }
+
+h4, .delta {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 20px; }
+
+h5, .epsilon {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 18px; }
+
+h6, .zeta {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 18px; }
+
+p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 14px; }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: disc; }
+
+ol li, ul li {
+  margin-left: 20px; }
+
+p, dl, hr,
+h1, h2, h3, h4, h5, h6,
+ol, ul,
+pre, table, blockquote,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px; }
+
+q {
+  quotes: "‘" "’" "“" "”"; }
+  q:before {
+    content: "‘";
+    content: open-quote; }
+  q:after {
+    content: "’";
+    content: close-quote; }
+  q q:before {
+    content: "“";
+    content: open-quote; }
+  q q:after {
+    content: "”";
+    content: close-quote; }
+
+blockquote {
+  quotes: "“" "”";
+  text-indent: -0.4em; }
+  blockquote p:before {
+    content: "“";
+    content: open-quote; }
+  blockquote p:after {
+    content: "";
+    content: no-close-quote; }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+    blockquote p:last-of-type:after {
+      content: "”";
+      content: close-quote; }
+
+.source {
+  display: block;
+  text-indent: 0; }
+  .source:before {
+    content: "—"; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+table {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    text-decoration: underline; }
+  a:active, a:focus {
+    outline: none; }
+
+/* Media Queries for various screen sizes */
 /* The Nav Object, inspired by Harry Roberts */
 /* http://csswizardry.com/2011/09/the-nav-abstraction */
-.main-navigation {
+.main-navigation, .pagination {
   list-style: none;
   margin-left: 0; }
-  .main-navigation > li,
-  .main-navigation > li > a {
+  .main-navigation > li, .pagination > li,
+  .main-navigation > li > a,
+  .pagination > li > a {
     display: inline-block;
     *display: inline;
     zoom: 1; }
@@ -155,3 +343,45 @@ input, select {
   background: #eee; }
   .main-navigation a {
     padding: 5px 10px; }
+
+/* THe Media Object */
+.mod-start-teaser {
+  margin: 10px; }
+  .mod-start-teaser > .img,
+  .mod-start-teaser > img {
+    float: left;
+    margin-right: 10px; }
+  .mod-start-teaser .img img,
+  .mod-start-teaser img {
+    display: block; }
+
+.mod-start-teaser,
+.mod-start-teaser .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1; }
+
+/* $PAGINATION Module */
+/* creates a horizontal pagination module, use following pattern */
+.pagination {
+  text-align: center; }
+  .pagination > li {
+    padding: 10px; }
+    .pagination > li > a {
+      padding: 10px;
+      margin: -10px; }
+
+.pagination .pagination-first a:before {
+  content: "« "; }
+
+.pagination .pagination-last a:after {
+  content: " »"; }
+
+.pagination > li {
+  background: #333333; }
+  .pagination > li.current, .pagination > li:hover {
+    background: blue; }
+  .pagination > li > a {
+    color: white; }
+
+/* YOUR STYLES HERE */

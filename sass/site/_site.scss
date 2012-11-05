@@ -1,6 +1,12 @@
 /* Site Wide Styles, eg home, body */
 
-* { box-sizing: border-box; }
+* { @include border-box; }
 
-html{}
-body{}
+html{
+    font-family: $font-main;
+    font-size: $font-size;
+}
+body{
+    background: $bg-color;
+    @include font-size($font-size-body);
+}

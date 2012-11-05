@@ -1,27 +1,29 @@
 ## Description
-Dieses Framework soll das Leben eines Frontend entwicklers einfacher machen.
+Dieses Framework soll das Leben eines Frontendentwicklers einfacher machen.
 
-Elemente:
+# RIGHT NOW IN DEVELOPMENT - DON't USE!!!
 
-Common
-    RESET
-    CLEARFIX // HELPER
-    MIXINS
-    VARIABLES / COLORS
-    GRID
+###Elemente:
 
-Typography
-    WEBFONT & ICONFONT
-    COMMON TYPO OBJECTS
+- Common
+    - RESET
+    - CLEARFIX // HELPER
+    - MIXINS
+    - VARIABLES / COLORS
+    - GRID
 
-SITE SPECIFIC
+- Typography
+    - WEBFONT & ICONFONT
+    - COMMON TYPO OBJECTS
+
+- SITE SPECIFIC
     BODY / MAIN
     SITES
     MEDIA QUERIES
 
-Wiederkehrend
-    ELEMENTS
-    OBJECTS
-        NAV
-        MEDIA
-        VCARD
+- Wiederkehrend
+    -ELEMENTS
+    -OBJECTS
+        - NAV
+        - MEDIA
+        - VCARD

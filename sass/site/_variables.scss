@@ -11,9 +11,35 @@ $primary1:  $grey;
 $primary2:  $black;
 $primary3:  $blue;
 $primary4:  $white;
+$primary5:  $darkgrey;
+$primary6:  $lightgrey;
 
 // Theme Standards
-$text-color:    $primary2;
+$text-color:    $primary5;
+$head-color:    $primary2;
 $link-color:    $primary3;
 $bg-color:      $primary4;
 $border-color:  $primary1;
+
+// Typography
+$font-size:         62.5%;
+$font-size-body:    1.4;
+$font-main:         Helvetica, Arial, sans-serif;
+$font-heading:      Helvetica, Arial, sans-serif;
+$font-size-h1:      2.6;
+$font-size-h2:      2.4;
+$font-size-h3:      2.2;
+$font-size-h4:      2.0;
+$font-size-h5:      1.8;
+$font-size-h6:      1.6;
+
+// Defaults
+$border-radius: 5;
+$base-margin:   20;
+
+// Support IE?
+// eg: to avoid those terrible progid filter
+$support-ie6:   false;
+$support-ie7:   false;
+$support-ie8:   false;
+
