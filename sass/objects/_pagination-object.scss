@@ -1,0 +1,43 @@
+/* $PAGINATION Module */
+/* creates a horizontal pagination module, use following pattern */
+
+// Use the following syntax and extend with %pagination and %nav
+// <ul class="my-pagination-module">
+//     <li class="my-pagination-module-first"><a href="#">First</a></li>
+//     <li clasS="my-pagination-module-prev"><a href="#">Previous</a></li>
+//     <li><a href="#">1</a></li>
+//     <li class="current"><a href="#">2</a></li>
+//     <li><a href="#">3</a></li>
+//     <li class="my-pagination-module-next"><a href="#">Next</a></li>
+//     <li class="my-pagination-module-last"><a href="#">Last</a></li>
+// </ul>
+
+
+%pagination{
+    text-align:center;
+    > li{
+        padding:($base-margin / 2) +px;
+        > a{
+            padding:($base-margin / 2) +px;
+            margin:-($base-margin / 2) +px;
+        }
+    }
+}
+
+%pagination-first a:before{
+        content:"« "; }
+%pagination-last a:after{
+        content:" »"; }
+
+%pagination-theme-simple{
+    > li{
+        background: $primary6;
+        &.current,
+        &:hover{
+            background: $primary3;
+        }
+        > a{
+            color: $primary4;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+strong{}
+em{}
+
+pre {}
+code{}
+
+blockquote{}
+cite{}
+
+// Base List Styling
+ol { list-style: decimal; }
+ul { list-style: disc; }
+ol, ul{
+    li{
+        margin-left: 20px;
+    }
+}
+
+// Base Margin, set up default at variables.scss
+p, dl, hr,
+h1, h2, h3, h4, h5, h6,
+ol, ul,
+pre, table, blockquote,
+address,
+fieldset,
+figure {
+  margin-bottom: $base-margin +px;
+}
+
+// Blockquotes
+// see:  html5doctor.com/blockquote-q-cite
+
+q{
+    quotes:"‘" "’" "“" "”";
+    &:before{ content:"‘"; content:open-quote; }
+    &:after{ content:"’"; content:close-quote; }
+
+    q:before{ content: "“"; content: open-quote; }
+    q:after{ content: "”"; content: close-quote; }
+}
+
+blockquote{
+    quotes: "“" "”";
+    text-indent: -0.4em;
+    p{
+        &:before{ content: "“"; content: open-quote; }
+        &:after{ content: ""; content: no-close-quote; }
+        &:last-of-type{
+            margin-bottom: 0;
+            &:after{ content: "”"; content: close-quote; }
+        }
+    }
+}
+
+.source{
+    display:block;
+    text-indent:0;
+    &:before{ content:"—"; }
+}
+
+// Images
+img{
+    max-width:100%;
+    height:auto;
+}
+
+// Tables
+table{
+    width:100%;
+}

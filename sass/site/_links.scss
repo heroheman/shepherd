@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus{
+        text-decoration:underline;
+    }
+    &:active,
+    &:focus{
+        outline:none;
+    }
+}

@@ -1,0 +1,37 @@
+//*** Table of Contents
+// search with the $prefix, eg $typography
+
+// General
+// Typography
+// Layout
+// Modules
+// States
+
+// $GENERAL
+// $TYPOGRAPHY
+// $LAYOUT
+// $MODULES
+
+.main-navigation{
+    @extend %nav;
+    @extend %main-nav;
+}
+
+.mod-start-teaser{
+    @extend %media;
+}
+
+.pagination{
+    @extend %nav;
+    @extend %pagination;
+    @extend %pagination-theme-simple;
+    .pagination-first{
+        @extend %pagination-first
+    }
+    .pagination-last{
+        @extend %pagination-last
+    }
+}
+
+// $STATES
+
