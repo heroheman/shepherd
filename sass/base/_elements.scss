@@ -58,11 +58,11 @@ q{
 blockquote{
     quotes: "“" "”";
         p{
-        &:before{ content: "“"; content: open-quote; }
-        &:after{ content: ""; content: no-close-quote; }
-        &:last-of-type{
-            margin-bottom: 0;
-            &:after{ content: "”"; content: close-quote; }
+            &:before{ content: "“"; content: open-quote; }
+            &:after{ content: ""; content: no-close-quote; }
+            &:last-of-type{
+                margin-bottom: 0;
+                &:after{ content: "”"; content: close-quote; }
         }
     }
 }
@@ -93,7 +93,7 @@ sup {top: -0.5em;}
 sub {bottom: -0.25em;}
 
 // Clickable Elements
-/* hand cursor on clickable elements */
+// hand cursor on clickable elements
 .clickable,
 label,
 input[type=button],

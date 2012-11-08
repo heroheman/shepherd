@@ -1,32 +1,42 @@
 // descriptive variables, add as needed:
-$black:     #000;
-$darkgrey:  #333333;
-$grey:      #666666;
-$lightgrey: #999999;
-$white:     #fff;
-$blue:      blue;
+
+// greyscale
+$black          : rgb(0,0,0);
+$darkgrey       : lighten($black, 25%);
+$grey           : lighten($black, 50%);
+$lightgrey      : lighten($black, 75%);
+$lightergrey    : lighten($black, 90%);
+$white          : rgb(255,255,255);
 
 // functional variables:
-$primary1:  $grey;
-$primary2:  $black;
-$primary3:  $blue;
-$primary4:  $white;
-$primary5:  $darkgrey;
-$primary6:  $lightgrey;
+$primary1:  rgb(0, 38, 53);
+$primary2:  rgb(1, 52, 64);
+$primary3:  rgb(171, 26, 37);
+$primary4:  rgb(217, 121, 37);
+$primary5:  rgb(239, 231, 190);
+
 
 // Theme Standards
-$text-color:    $primary5;
+$text-color:    $black;
+$bg-color:      $white;
 $head-color:    $primary2;
 $link-color:    $primary3;
-$bg-color:      $primary4;
-$border-color:  $primary1;
+$border-color:  $lightergrey;
+$code-bg-color: $bg-color;
+
+$btn-text:      $white;
+$btn-first:     #09c;
+$btn-second:    lighten($btn-first, 10%);
+$btn-success:   $primary2;
+$btn-alert:     $primary4;
+
 
 // Typography
 $font-size:         62.5%;
 $font-size-body:    1.4;
 $line-height:       1.6;
 $font-main:         Helvetica, Arial, sans-serif;
-$font-heading:      Helvetica, Arial, sans-serif;
+$font-heading:      inherit;
 $font-mono:         monospace, sans-serif;
 $font-size-h1:      2.6;
 $font-size-h2:      2.4;
@@ -35,11 +45,19 @@ $font-size-h4:      2.0;
 $font-size-h5:      1.8;
 $font-size-h6:      1.6;
 
+
+// Links
+$linkcolor          : rgb(1,53,104);
+$linkcolorhover     : darken($linkcolor, 10);
+$linkcolorvisited   : darken($linkcolorhover, 10);
+$linkcolorfocus     : darken($linkcolorvisited, 10);
+
 // Defaults
 $border-radius: 5;
 $base-margin:   20;
 
 // Support IE?
+// used in some compass mixins
 // eg: to avoid those terrible progid filter
 $support-ie6:   false;
 $support-ie7:   false;

@@ -1,0 +1,34 @@
+.btn{
+    @include font-size(1.4);
+    background: $btn-first;
+    border-bottom: 1px solid $lightgrey;
+    border: 1px solid $lightergrey;
+    // box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 5px 5px rgba(0, 0, 0, .2);
+    color: $btn-text;
+    display: inline-block;
+    line-height: 1;
+    padding: 10px 15px;
+    position: inline-block;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    &:hover,
+    &:active,
+    &:visited{
+        text-decoration: none;
+    }
+
+    &.tiny   { padding: 5px 5px; @include font-size(1); }
+    &.small  { padding: 7px 10px; @include font-size(1.2); }
+    &.medium { padding: 10px 15px; @include font-size(1.4); }
+    &.big    { padding: 15px 30px; @include font-size(1.8); }
+
+    &.primary    { background: $btn-first; }
+    &.secondary  { background: $btn-second; }
+    &.success    { background: $btn-success; }
+    &.alert      { background: $btn-alert; }
+
+    &.square    {  }
+    &.radius    { border-radius: $border-radius +px; }
+    &.pill     { border-radius: 1000px; }
+}
+
