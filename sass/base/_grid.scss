@@ -68,7 +68,6 @@
     }
     .column,
     .columns {
-        @extend %clearfix;
         width: auto !important;
         float: none;
         &:last-child{

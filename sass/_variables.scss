@@ -2,7 +2,7 @@
 $black:     #000;
 $darkgrey:  #333333;
 $grey:      #666666;
-$lightgrey: #333333;
+$lightgrey: #999999;
 $white:     #fff;
 $blue:      blue;
 
@@ -24,8 +24,10 @@ $border-color:  $primary1;
 // Typography
 $font-size:         62.5%;
 $font-size-body:    1.4;
+$line-height:       1.6;
 $font-main:         Helvetica, Arial, sans-serif;
 $font-heading:      Helvetica, Arial, sans-serif;
+$font-mono:         monospace, sans-serif;
 $font-size-h1:      2.6;
 $font-size-h2:      2.4;
 $font-size-h3:      2.2;

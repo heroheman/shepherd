@@ -16,10 +16,11 @@
 %pagination{
     text-align:center;
     > li{
-        padding:($base-margin / 2) +px;
+        padding:($base-margin / 4) +px ($base-margin / 2) +px;
+        margin-left: ($base-margin / 2) +px;
         > a{
             padding:($base-margin / 2) +px;
-            margin:-($base-margin / 2) +px;
+            margin:-($base-margin / 4) +px;
         }
     }
 }

@@ -1,20 +1,26 @@
-@import "common/reset";
-@import "common/clearfix";
-@import "common/grid";
-@import "common/mixins";
-@import "common/placeholder";
-
-@import "site/webfont";
-@import "site/variables";
-@import "site/site";
-@import "site/typography";
-@import "site/elements";
-@import "site/links";
-@import "site/media-queries";
-
-@import "objects/nav-object";
-@import "objects/media-object";
-@import "objects/pagination-object";
-
-/* YOUR STYLES HERE */
+@import "variables";
 @import "your-style";
+
+// base
+@import "base/reset";
+@import "base/clearfix";
+@import "base/site";
+@import "base/elements";
+@import "base/mixins";
+@import "base/placeholder";
+
+// layout
+@import "layout/grid";
+@import "layout/webfont";
+@import "layout/typography";
+@import "layout/links";
+@import "layout/buttons";
+
+// module
+@import "module/nav-object";
+@import "module/media-object";
+@import "module/pagination-object";
+
+// state
+@import "state/media-queries";
+

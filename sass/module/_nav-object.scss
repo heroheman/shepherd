@@ -4,7 +4,7 @@
 %nav{
     list-style:none;
     margin-left:0;
-    @extend .clearfix;
+    @extend %clearfix;
 
     > li,
     > li > a{

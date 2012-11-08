@@ -27,4 +27,5 @@ h6,.zeta{
 p{
     @include font-size($font-size-body); }
 
-
+// standardize any monospaced elements
+pre, code, kbd, samp { font-family: $font-mono; }
