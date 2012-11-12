@@ -469,6 +469,22 @@ a {
   .btn.pill {
     border-radius: 1000px; }
 
+.btn-group {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .btn-group > li {
+    float: left;
+    margin: 0 0 0 -1px; }
+    .btn-group > li:first-child {
+      margin-left: 0; }
+  .btn-group.radius > li:first-child a {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; }
+  .btn-group.radius > li:last-child a {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; }
+
 /* The Nav Object, inspired by Harry Roberts */
 /* http://csswizardry.com/2011/09/the-nav-abstraction */
 .main-navigation, .pagination {

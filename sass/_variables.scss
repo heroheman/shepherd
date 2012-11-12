@@ -25,8 +25,8 @@ $border-color:  $lightergrey;
 $code-bg-color: $bg-color;
 
 $btn-text:      $white;
-$btn-first:     #09c;
-$btn-second:    lighten($btn-first, 10%);
+$btn-primary:   #09c;
+$btn-second:    lighten($btn-primary, 10%);
 $btn-success:   $primary2;
 $btn-alert:     $primary4;
 
