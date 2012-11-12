@@ -12,9 +12,9 @@ Shepherd ist noch zur Zeit noch Entwicklung und in einer frühen Alpha Version. 
 - based on SMACSS
 - OOCSS Objects as SASS Placeholders (No Bloated Code)
 
-Installation
-1. Install Sass
-2. Clone Project
-3. Navigate to your project
-4. use "sass --watch sass/style.scss:css/style.css"
-5. Buy Mass Effect and make a complete Playthrough :)
+## Installation
+- Install Sass
+- Clone Project
+- Navigate to your project
+- use "sass --watch sass/style.scss:css/style.css"
+- Buy Mass Effect and make a complete Playthrough :)
