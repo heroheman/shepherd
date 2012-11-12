@@ -12,6 +12,15 @@
 // $LAYOUT
 // $MODULES
 
+.my-module{
+    @extend %island;
+}
+
+.vertical-navigation{
+    @extend %nav;
+    @extend %vertical;
+}
+
 .main-navigation{
     @extend %nav;
     @extend %main-nav;

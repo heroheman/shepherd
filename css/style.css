@@ -83,13 +83,13 @@ input, select {
 
 /* $CLEARFIX */
 /* File: "common/clearfix.scss" */
-.row, .main-navigation, .pagination {
+.row, .vertical-navigation, .main-navigation, .pagination, .my-module {
   overflow: none;
   *zoom: 1; }
-  .row::before, .main-navigation::before, .pagination::before, .row::after, .main-navigation::after, .pagination::after {
+  .row::before, .vertical-navigation::before, .main-navigation::before, .pagination::before, .my-module::before, .row::after, .vertical-navigation::after, .main-navigation::after, .pagination::after, .my-module::after {
     content: " ";
     display: table; }
-  .row::after, .main-navigation::after, .pagination::after {
+  .row::after, .vertical-navigation::after, .main-navigation::after, .pagination::after, .my-module::after {
     clear: both; }
 
 /* Site Wide Styles, eg home, body */
@@ -485,12 +485,12 @@ a {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px; }
 
-/* The Nav Object, inspired by Harry Roberts */
-/* http://csswizardry.com/2011/09/the-nav-abstraction */
-.main-navigation, .pagination {
+/* The Nav Object */
+.vertical-navigation, .main-navigation, .pagination {
   list-style: none;
   margin-left: 0; }
-  .main-navigation > li, .pagination > li,
+  .vertical-navigation > li, .main-navigation > li, .pagination > li,
+  .vertical-navigation > li > a,
   .main-navigation > li > a,
   .pagination > li > a {
     display: inline-block;
@@ -502,6 +502,12 @@ a {
   background: #eee; }
   .main-navigation a {
     padding: 5px 10px; }
+
+.vertical-navigation > li {
+  display: block;
+  border-top: 1px solid #e6e6e6;
+  padding: 10px;
+  margin-left: 0; }
 
 /* THe Media Object */
 .mod-start-teaser {
@@ -543,5 +549,14 @@ a {
     background: #ab1a25; }
   .pagination > li > a {
     color: #d97925; }
+
+.my-module {
+  display: block; }
+
+.my-module {
+  padding: 20px; }
+
+.my-module > :last-child {
+  margin-bottom: 0; }
 
 /* Media Queries for various screen sizes */
