@@ -440,6 +440,8 @@ a {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
   .btn:hover, .btn:active, .btn:visited {
     text-decoration: none; }
+  .btn:hover {
+    background: #004d66; }
   .btn.tiny {
     padding: 5px 5px;
     font-size: 10px;
@@ -458,12 +460,20 @@ a {
     font-size: 1.8rem; }
   .btn.primary {
     background: #0099cc; }
+    .btn.primary:hover, .btn.primary:active, .btn.primary:focus {
+      background: #0086b3; }
   .btn.secondary {
     background: deepskyblue; }
+    .btn.secondary:hover, .btn.secondary:active, .btn.secondary:focus {
+      background: #00ace6; }
   .btn.success {
-    background: #013440; }
+    background: green; }
+    .btn.success:hover, .btn.success:active, .btn.success:focus {
+      background: #006700; }
   .btn.alert {
-    background: #d97925; }
+    background: red; }
+    .btn.alert:hover, .btn.alert:active, .btn.alert:focus {
+      background: #e60000; }
   .btn.radius {
     border-radius: 5px; }
   .btn.pill {

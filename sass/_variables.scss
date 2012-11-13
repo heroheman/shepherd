@@ -15,6 +15,9 @@ $primary3:  rgb(171, 26, 37);
 $primary4:  rgb(217, 121, 37);
 $primary5:  rgb(239, 231, 190);
 
+$success-color: green;
+$alert-color:   red;
+
 
 // Theme Standards
 $text-color:    $black;
@@ -27,8 +30,8 @@ $code-bg-color: $bg-color;
 $btn-text:      $white;
 $btn-primary:   #09c;
 $btn-second:    lighten($btn-primary, 10%);
-$btn-success:   $primary2;
-$btn-alert:     $primary4;
+$btn-success:   $success-color;
+$btn-alert:     $alert-color;
 
 
 // Typography

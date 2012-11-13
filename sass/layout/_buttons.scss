@@ -16,16 +16,19 @@
     &:visited{
         text-decoration: none;
     }
+    &:hover{
+        background: darken($btn-primary, 20%);
+    }
 
-    &.tiny   { padding: 5px 5px; @include font-size(1); }
-    &.small  { padding: 7px 10px; @include font-size(1.2); }
-    &.medium { padding: 10px 15px; @include font-size(1.4); }
-    &.big    { padding: 15px 30px; @include font-size(1.8); }
+    &.tiny   { padding: 5px 5px;    @include font-size(1); }
+    &.small  { padding: 7px 10px;   @include font-size(1.2); }
+    &.medium { padding: 10px 15px;  @include font-size(1.4); }
+    &.big    { padding: 15px 30px;  @include font-size(1.8); }
 
-    &.primary    { background: $btn-primary; }
-    &.secondary  { background: $btn-second; }
-    &.success    { background: $btn-success; }
-    &.alert      { background: $btn-alert; }
+    &.primary    { background: $btn-primary; @include hoverActiveFocus(background, darken($btn-primary, 5%));}
+    &.secondary  { background: $btn-second;  @include hoverActiveFocus(background, darken($btn-second, 5%));}
+    &.success    { background: $btn-success; @include hoverActiveFocus(background, darken($btn-success, 5%));}
+    &.alert      { background: $btn-alert;   @include hoverActiveFocus(background, darken($btn-alert, 5%));}
 
     &.square    {  }
     &.radius    { border-radius: $border-radius +px; }
