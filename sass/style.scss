@@ -1,5 +1,4 @@
 @import "variables";
-@import "your-style";
 
 // base
 @import "base/mixins";
@@ -28,4 +27,6 @@
 // state
 @import "state/media-queries";
 // @import "state/print";
+
+@import "your-style";
 
