@@ -1,6 +1,6 @@
 strong, th{ font-weight: bold; }
 em{ font-weight: italic; }
-small{ @include font-size(0.8); }
+small{ small{ @include font-size($font-size-small); } }
 del {text-decoration: line-through;}
 abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
 
