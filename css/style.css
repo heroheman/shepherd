@@ -1,81 +1,66 @@
 /*
 Syntax error: Invalid CSS after "...ze-small:   0.9": expected "{", was ";"
-        on line 50 of sass/_variables.scss
-        from line 1 of sass/style.scss
-
-45: $font-size-h2:      2.4;
-46: $font-size-h3:      2.2;
-47: $font-size-h4:      2.0;
-48: $font-size-h5:      1.8;
-49: $font-size-h6:      1.6;
-50: 1font-size-small:   0.9;
-51: 
-52: 
-53: // Links
-54: $linkcolor          : rgb(1,53,104);
-55: $linkcolorhover     : darken($linkcolor, 10);
+        on line 50 of /home/florenz/Dropbox/_dev/shepherd/sass/_variables.scss
+        from line 1 of /home/florenz/Dropbox/_dev/shepherd/sass/style.scss
 
 Backtrace:
-sass/_variables.scss:50
-sass/style.scss:1
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:1130:in `expected'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:1066:in `expected'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:1061:in `tok!'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:517:in `block'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:536:in `block_child'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:529:in `block_contents'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/scss/parser.rb:27:in `parse'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/engine.rb:342:in `_to_tree'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/engine.rb:274:in `to_tree'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:222:in `visit_import'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/engine.rb:315:in `_render'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/engine.rb:262:in `render'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin/compiler.rb:340:in `update_stylesheet'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin/compiler.rb:202:in `update_stylesheets'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `each'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `update_stylesheets'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin/compiler.rb:298:in `watch'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:95:in `initialize_adapter'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `initialize'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `new'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `start'
-/var/lib/gems/1.8/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:44:in `start'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin/compiler.rb:306:in `watch'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin.rb:107:in `send'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/exec.rb:431:in `watch_or_update'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/exec.rb:302:in `process_result'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/exec.rb:41:in `parse'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
-/var/lib/gems/1.8/gems/sass-3.2.1/bin/sass:8
-/usr/local/bin/sass:19:in `load'
-/usr/local/bin/sass:19
+/home/florenz/Dropbox/_dev/shepherd/sass/_variables.scss:50
+/home/florenz/Dropbox/_dev/shepherd/sass/style.scss:1
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1130:in `expected'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:517:in `block'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:274:in `to_tree'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:222:in `visit_import'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+/var/lib/gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/var/lib/gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/var/lib/gems/1.8/gems/compass-0.12.2/bin/compass:30
+/var/lib/gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
+/var/lib/gems/1.8/gems/compass-0.12.2/bin/compass:44
+/usr/local/bin/compass:19:in `load'
+/usr/local/bin/compass:19
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...ze-small:   0.9\": expected \"{\", was \";\"\A         on line 50 of sass/_variables.scss\A         from line 1 of sass/style.scss\A \A 45: $font-size-h2:      2.4;\A 46: $font-size-h3:      2.2;\A 47: $font-size-h4:      2.0;\A 48: $font-size-h5:      1.8;\A 49: $font-size-h6:      1.6;\A 50: 1font-size-small:   0.9;\A 51: \A 52: \A 53: // Links\A 54: $linkcolor          : rgb(1,53,104);\A 55: $linkcolorhover     : darken($linkcolor, 10);"; }
+  content: "Syntax error: Invalid CSS after \"...ze-small:   0.9\": expected \"{\", was \";\"\A         on line 50 of /home/florenz/Dropbox/_dev/shepherd/sass/_variables.scss\A         from line 1 of /home/florenz/Dropbox/_dev/shepherd/sass/style.scss"; }
