@@ -7,7 +7,7 @@ Its not a Framework like [Twitter Bootstrap](http://twitter.github.com/bootstrap
 **RIGHT NOW IN DEVELOPMENT - USE ON OWN RISK!!!**
 Its right now in an early alpha stage but its usable - but don't expect an easy update in a working project.
 
-### DOCUMENTATION
+### Documentation
 I will provide a small documentation when i think its usable by the public.
 
 ### SASS? Why not Compass?
