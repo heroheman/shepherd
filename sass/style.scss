@@ -17,14 +17,15 @@
 @import "layout/links";
 @import "layout/buttons";
 
-// module
+// objects
 @import "module/nav-object";
 @import "module/media-object";
 @import "module/pagination-object";
 @import "module/module-object";
 @import "module/island-object";
-@import "module/image-grid-object";
-@import "module/thumb-text-grid-object";
+// module patterns
+@import "module/mod-image-grid";
+@import "module/mod-text-grid";
 
 // state
 @import "state/media-queries";
