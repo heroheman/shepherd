@@ -1,0 +1,44 @@
+// Responsive Image image-grid
+// see: http://codepen.io/bradfrost/pen/xkcBn
+
+%image-grid {
+    padding: 0.25em;
+    overflow: hidden;
+    list-style: none;
+    li {
+        float: left;
+        width: 50%;
+        padding: 0.25em;
+        margin-left: 0;
+        &:nth-child(odd) {
+            clear: left;
+        }
+    }
+    img {
+        display: block;
+    }
+}
+
+    @media screen and (min-width: 40em) {
+        %image-grid li {
+            width: 33.3333333333333333%;
+            &:nth-child(3n+1) {
+                clear: left;
+            }
+            &:nth-child(odd) {
+                clear: none;
+            }
+        }
+    }
+    @media screen and (min-width: 55em) {
+        %image-grid li {
+            width: 25%;
+            &:nth-child(4n+1) {
+                clear: left;
+            }
+            &:nth-child(3n+1) {
+                clear: none;
+            }
+        }
+    }
+
