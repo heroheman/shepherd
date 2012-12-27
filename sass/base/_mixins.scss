@@ -1,0 +1,97 @@
+// Mixins
+// /* File: "common/mixins.scss" */
+// Should be visible in output css
+
+
+// Vendorize CSS Properties - eg.: vendorize(border-box, 10px);
+@mixin vendorize($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+// Border-Box, use content-box as default
+@mixin border-box($box-type: border-box) {
+    @include vendorize(box-sizing, $box-type)
+}
+
+// Emboss Elements
+@mixin emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+// Letterpress Typo
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+// Hover Active Focus Link
+@mixin hoverActiveFocus($property, $value) {
+    &:hover, &:active, &:focus {
+        #{$property}: $value;
+    }
+}
+
+// REM FONT SIZE
+@mixin font-size($sizeValue: 1.6){
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// Import font-face
+// use: @include font-face($name, $font-files, $eot, $weight, $style)
+// source: http://compass-style.org/reference/compass/css3/font_face/
+@mixin font-face($name, $font-files, $eot: false, $weight: false, $style: false) {
+    $iefont: unquote("#{$eot}?#iefix");
+    @font-face {
+        font-family: quote($name);
+        @if $eot {
+            src: font-url($eot);
+            $font-files: font-url($iefont) unquote("format('eot')"), $font-files; }
+        src: $font-files;
+        @if $weight {
+            font-weight: $weight; }
+        @if $style {
+            font-style: $style;  }
+    }
+}
+
+// Opacity
+@mixin opacity($opacity) {
+    @if $support-ie6 or $support-ie7 or $support-ie8 {
+        filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})"); }
+    opacity: $opacity;
+}
+
+// Border Radius
+@mixin border-radius($radius: $border-radius){
+    border-radius: $radius +px;
+}
+
+// Basic Transition Mixin
+// Found: http://css-tricks.com/forums/discussion/17614/lets-learn-sass-together-/p1
+// Example Usage:  @include transition(padding, 1s, ease-in-out);
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+    background-color: $toColor; /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+    background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, $fromColor, $toColor);
+    // see variables for ie support, i don't recommend using the filter property
+    @if $support-ie6 or $support-ie7 or $support-ie8{
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+    }
+}
+

@@ -1,0 +1,44 @@
+/* The Nav Object */
+// http://csswizardry.com/2011/09/the-nav-abstraction
+
+// Basic Nav
+%nav{
+    list-style:none;
+    margin-left:0;
+    @extend %clearfix;
+
+    > li,
+    > li > a{
+        display:inline-block;
+        *display:inline;
+        zoom:1;
+    }
+}
+
+// Colored Nav
+%main-nav{
+    width:100%;
+    background:#eee;
+    a{
+        padding:5px 10px;
+    }
+}
+
+// Breadcrumb
+%breadcrumb {
+    li:before{ content:"» " }
+    li:first-child:before{ content:normal; }
+}
+
+%centered { text-align: center; }
+
+%vertical{
+    @extend %nav;
+    >li{
+        display: block;
+        border-top: 1px solid $border-color;
+        padding: ($base-margin / 2) +px;
+        margin-left: 0;
+    }
+}
+

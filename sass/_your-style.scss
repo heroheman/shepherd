@@ -1,0 +1,43 @@
+//*** Table of Contents
+// search with the $prefix, eg $typography
+
+// General
+// Typography
+// Layout
+// Modules
+// States
+
+// $GENERAL
+// $TYPOGRAPHY
+// $LAYOUT
+.content{
+    >h2{
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 10px;
+    }
+}
+
+.shep-elem{
+    &.grid{
+        text-align: center;
+        .row{
+            margin: 1px auto;
+            background: #f0f0f0;
+        }
+        .column, .columns{
+            background: $lightergrey;
+            border-right: 1px solid $white;
+        }
+    }
+}
+// $MODULES
+
+
+.navigation{
+    @extend %vertical;
+    list-style-type: none;
+}
+
+
+// $STATES
+

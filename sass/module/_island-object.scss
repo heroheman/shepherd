@@ -1,0 +1,20 @@
+// Handy Little Object by Harry Roberts
+// see: http://csswizardry.com/2011/10/the-island-object/
+
+%island,
+%islet{
+    display: block;
+    @extend %clearfix;
+}
+%island{
+    padding:$base-margin +px;
+}
+    %island > :last-child,
+    %islet > :last-child{
+        margin-bottom:0;
+    }
+
+// Smaller Island
+%islet{
+    padding: ($base-margin / 2) +px;
+}

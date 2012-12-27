@@ -1,74 +1,150 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Shepherd : Another Website Framework with SASS" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
     <title>Shepherd</title>
-  </head>
 
-  <body>
+    <!-- Meta Tags -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="language" content="de" />
+    <meta name="content-language" content="de" />
+    <meta name="robots" content="index,follow" />
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/heroheman/shepherd">View on GitHub</a>
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/libs/modernizr-dev.js"></script>
 
-          <h1 id="project_title">Shepherd</h1>
-          <h2 id="project_tagline">Another Website Framework with SASS</h2>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/heroheman/shepherd/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/heroheman/shepherd/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+</head>
+    <body>
+        <div class="row">
+            <div class="four columns">
+                <div class="header">
+                    <h1>Shepherd</h1>
+                </div>
+                <div>
+                    <ul class="navigation">
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#">Grid</a></li>
+                        <li><a href="#">OOCSS</a></li>
+                        <li><a href="#">Placeholder</a></li>
+                        <li><a href="#">Modules</a></li>
+                    </ul>
+                </div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+            </div>
+            <div class="content eight columns">
+                <h2>Start</h2>
+                <p>
+                    Shepherd Framework is my attempt of creating a CSS starter kit for my daily work. I try to include Best Practices from the Frontend Development Community without the bloat. Also its focused on Responsive Webdesign - but its also usable for old school websites. It's running on SASS and is using the principles of SMACSS and OOCSS. Shepherd makes use of the placeholder feature introduced in SASS 3.2, so even its feature rich, its not in your final CSS when you don't use it.
+                </p>
+                <p>
+                    Its not a Framework like Twitter Bootstrap or Zurb's Foundation - if you want already styled components I suggest to try the former mentioned Tools.
+                </p>
+                <p>
+                    <strong>RIGHT NOW IN DEVELOPMENT - USE ON OWN RISK! YOU MIGHT GET HURT.</strong> Its right now in an early alpha stage but its usable - but don't expect an easy update in a working project.
+                </p>
+                <h2>Grid</h2>
+                <div class="shep-block">
+                    <h4>Basic Usage</h4>
+                    <p>
+                        Shepherds Grid is pretty easy, uses the common <code>row/column</code> Syntax and provides basic features.
+                    </p>
+                    <h5>Example:</h5>
+                        <pre>
+                            <code data-language="html"><div class="row">
+                                <header class="twelve columns">OHAI, this is my head</header>
+                                <nav class="four columns">Here is a navigation</nav>
+                                <div class="eight columns">Content pops here</div>
+                            </div></code>
+                        </pre>
+                    <div class="shep-elem grid">
+                        <div class="row">
+                            <div class="twelve columns">twelve columns</div>
+                        </div>
+                        <div class="row">
+                            <div class="eleven columns">eleven columns</div>
+                            <div class="one column">one</div>
+                        </div>
+                        <div class="row">
+                            <div class="ten columns">ten columns</div>
+                            <div class="two columns">two</div>
+                        </div>
+                        <div class="row">
+                            <div class="nine columns">nine columns</div>
+                            <div class="three columns">three columns</div>
+                        </div>
+                        <div class="row">
+                            <div class="eight columns">eight columns</div>
+                            <div class="four columns">four columns</div>
+                        </div>
+                        <div class="row">
+                            <div class="seven columns">seven columns</div>
+                            <div class="five columns">five columns</div>
+                        </div>
+                        <div class="row">
+                            <div class="six columns">six columns</div>
+                            <div class="six columns">six columns</div>
+                        </div>
+                    </div>
+                </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+                <h4>Nesting Grid</h4>
+                <p>If you want a grid inside a grid <em>(yo dawg)</em>, just insert a <code>row</code> inside a <code>column</code> Element and you are done.</p>
+                <pre>
+                    <code data-language="html">
+                        <div class="row">
+                            <div class="eight column">
+                                <h2>Outer Column</h2>
+                                <div class="row">
+                                    <div class="eight column">
+                                        <h3>Hi, i am a column in a column</h3>
+                                    </div>
+                                    <div class="four columns">
+                                        <img src="xzibit.jpg" alt="yo dawg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="four column">Another outer column</div>
+                        </div>
+                    </code>
+                </pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+                <h4>Push and Pull</h4>
+                <p>Sometimes it is easier to just add a margin at a grid element. Here you can simply use the well known <code>push-x</code> classes. Needless to say, I borrowed this from the famous <a href="http://960.gs">960 Gridsystem</a>.</p>
+                <h5>Example:</h5>
 
-<h3>Designer Templates</h3>
+                <div class="shep-elem grid">
+                    <div class="row">
+                        <div class="eight columns push-one">eight columns push-two</div>
+                        <div class="eight columns push-two">eight columns push-two</div>
+                        <div class="eight columns push-three">eight columns push-two</div>
+                        <div class="eight columns push-four">eight columns push-two</div>
+                    </div>
+                </div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+                <h4>Responsive</h4>
 
-<h3>Rather Drive Stick?</h3>
+                <h2>OOCSS</h2>
+                <h2>Placeholder</h2>
+                <h2>Modules</h2>
+            </div>
+        </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Shepherd maintained by <a href="https://github.com/heroheman">heroheman</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- Custom Plugins -->
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/libs/rainbow.min.js"></script>
+    </body>
 </html>

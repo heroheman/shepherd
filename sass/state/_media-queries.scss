@@ -1,0 +1,64 @@
+/* Media Queries for various screen sizes */
+// List from: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+// Uncomment as needed
+
+// Smartphones (portrait and landscape)
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    // Custom Styles here:
+}
+
+// // Smartphones (landscape)
+// @media only screen
+// and (min-width : 321px) {
+//     // Custom Styles here:
+// }
+
+// // Smartphones (portrait)
+// @media only screen
+// and (max-width : 320px) {
+//     // Custom Styles here:
+// }
+
+// // iPads (portrait and landscape)
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px) {
+//     // Custom Styles here:
+// }
+
+// // iPads (landscape)
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px)
+// and (orientation : landscape) {
+//     // Custom Styles here:
+// }
+
+// // iPads (portrait)
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px)
+// and (orientation : portrait) {
+//     // Custom Styles here:
+// }
+
+// // Desktops and laptops
+// @media only screen
+// and (min-width : 1224px) {
+//     // Custom Styles here:
+// }
+
+// // Large screens
+// @media only screen
+// and (min-width : 1824px) {
+//     // Custom Styles here:
+// }
+
+// iPhone 4 / Retina Images
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    // Custom Styles here:
+}

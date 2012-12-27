@@ -1,0 +1,130 @@
+strong, th{ font-weight: bold; }
+em{ font-weight: italic; }
+small{ small{ @include font-size($font-size-small); } }
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+// Code Examples
+pre {
+    background: $lightgrey;
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+code{}
+
+// Base List Styling
+ol { list-style: decimal; }
+ul { list-style: disc; }
+ol, ul{
+    li{
+        margin-left: 20px;
+    }
+}
+
+// Definition list
+dl{
+    dt{font-weight: bold;}
+    dd{}
+}
+
+// Base Margin, set up default at variables.scss
+p, dl, hr,
+h1, h2, h3, h4, h5, h6,
+ol, ul,
+pre, table, blockquote,
+address,
+fieldset,
+figure {
+  margin-bottom: $base-margin +px;
+}
+
+// Blockquotes
+// see:  html5doctor.com/blockquote-q-cite
+
+q{
+    quotes:"‘" "’" "“" "”";
+    &:before{ content:"‘"; content:open-quote; }
+    &:after{ content:"’"; content:close-quote; }
+
+    q:before{ content: "“"; content: open-quote; }
+    q:after{ content: "”"; content: close-quote; }
+}
+
+blockquote{
+    quotes: "“" "”";
+        p{
+            &:before{ content: "“"; content: open-quote; }
+            &:after{ content: ""; content: no-close-quote; }
+            &:last-of-type{
+                margin-bottom: 0;
+                &:after{ content: "”"; content: close-quote; }
+        }
+    }
+}
+
+.source{
+    display:block;
+    text-indent:0;
+    &:before{ content:"—"; }
+}
+
+// Images
+img{
+    max-width:100%;
+    height:auto;
+    vertical-align: middle;
+}
+
+/* Tables */
+// tables still need cellspacing="0" in the markup
+table   { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%; }
+th      { font-weight: bold; vertical-align: bottom; }
+td      { font-weight: normal; vertical-align: top; }
+
+
+// Make sure sup and sub don't screw with your line-heights
+// See Comments here: gist.github.com/413930
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+// Clickable Elements
+// hand cursor on clickable elements
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {cursor: pointer;}
+
+// Webkit browsers add a 2px margin outside the chrome of form elements
+button, input, select, textarea {margin: 0;}
+
+// make buttons play nice in IE
+button {width: auto; overflow: visible;}
+
+// scale images in IE7 more attractively
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+// Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+//  j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+// Removes default fieldset style
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea{ resize: vertical; }

@@ -1,0 +1,15 @@
+/* Site Wide Styles, eg home, body */
+
+* { @include border-box; }
+
+html{
+    font-family: $font-main;
+    font-size: $font-size;
+    // force a vertical scrollbar to prevent a jumpy page
+    overflow-y: scroll;
+}
+body{
+    background: $bg-color;
+    @include font-size($font-size-body);
+    line-height: $line-height +em;
+}
