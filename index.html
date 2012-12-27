@@ -134,9 +134,82 @@
                 </div>
 
                 <h4>Responsive</h4>
+                <p>The Grid is responsive out-of-the-box. At a certain window-width the grid classes will go to full width. Try it by resizing the browserwindow of this page. If you want the mobile view more specific, try the mobile grid.</p>
 
-                <h2>OOCSS</h2>
+                <h4>Mobile Grid <em>(alpha)</em></h4>
+                <p>The mobile grid was <del>stolen</del> inspired by the one of <a href="http://foundation.zurb.com">Foundation</a>. I am not sure if the invent it or also adopt it, but I want to give credit to them. They are awesome.</p>
+                <p>Adapting the mobile grid is pretty easy. Define your grid classes as described above. For additional mobile layout blocks, just add <code>.mobile-one</code> (25%), <code>.mobile-two</code> (50%), <code>.mobile-three</code> (75%) or <code>.mobile-four</code> (100%) as class.</p>
+
+                <h4>Example</h4>
+                <pre>
+                    <code data-language="html">
+                        <div class="row">
+                            <header class="twelve columns mobile-four">twelve columns mobile-four</header>
+                            <nav class="four columns mobile-two">four columns mobile-two</nav>
+                            <div class="eight columns mobile-two">eight columns mobile-two</div>
+                        </div>
+                    </code>
+                </pre>
+
+                <div class="shep-elem grid">
+                    <div class="row">
+                            <header class="twelve columns mobile-four">twelve columns mobile-four</header>
+                            <nav class="four mobile-two columns">four columns mobile-two</nav>
+                            <div class="eight mobile-two columns">eight columns mobile-two</div>
+                        </div>
+                </div>
+
                 <h2>Placeholder</h2>
+                <p>SASS allows to include placeholder in your SCSS. It is similar to the <code>include</code> feature, but with the advantage that you can write semantic correct markup and modules are only in your output CSS, then you really need it. This avoids code bloat and allows to use Shepherd also in the production - without cleaning your project from unused features.</p>
+                <h4>Example SASS CSS:</h4>
+                <pre>
+                    <code data-language="css">
+                        .my-module{
+                            @include %placeholder-module;
+                            background: #f00;
+                        }
+                        .another-module{
+                            @include %placeholder-module;
+                            background: #baa;
+                        }
+
+                        %placeholder-module{
+                            /* module stuff */
+                        }
+                    </code>
+                </pre>
+                <h4>Example Output CSS:</h4>
+                <pre>
+                    <code data-language="css">
+                        .my-module,
+                        .another-module{
+                            @include %placeholder-module;
+                        }
+                        .my-module{
+                            background: #foo;
+                        }
+                        .another-module{
+                            background: #baa;
+                        }
+                    </code>
+                </pre>
+                <p>The Placeholder Feature is implemented in SASS 3.2. So, this is required for Shepherd. To check your version type: <code>sass -v</code> in your ruby console. If you want to update, type <code>gem update sass</code>. This should do the trick.</p>
+
+                <h2>OOCSS & SMACSS</h2>
+                <h4>OOCSS</h4>
+                <p>Shepherd makes use of Nicole Sullivan's <a href="http://oocss.org">OOCSS</a>. If you want reusable markup and css, this is the way to go. I could explain it here, but she explains it better in this presentation.</p>
+                <iframe src="http://de.slideshare.net/slideshow/embed_code/990405" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://de.slideshare.net/stubbornella/object-oriented-css" title="Object Oriented CSS" target="_blank">Object Oriented CSS</a> </strong> from <strong><a href="http://de.slideshare.net/stubbornella" target="_blank">Nicole Sullivan</a></strong> </div>
+
+                <p>So far implemented:</p>
+                <ul>
+                    <li>The Media Object</li>
+                    <li>The Island Object</li>
+                    <li>The Nav Object</li>
+                    <li>The Pagination Object</li>
+                </ul>
+
+                <p>...to be continued.</p>
+
                 <h2>Modules</h2>
             </div>
         </div>

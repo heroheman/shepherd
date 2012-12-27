@@ -1,4 +1,5 @@
 @charset "CP850";
+@import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|PT+Sans:400,700|Droid+Sans:700&.css");
 /* $RESET **************/
 /* File: "common/reset.scss" */
 html, body, div, span, object, iframe,
@@ -353,14 +354,6 @@ textarea {
     margin-left: 91.66%; }
   .row .push-twelve {
     margin-left: 100%; }
-  .row .mobile-one {
-    width: 25%; }
-  .row .mobile-two {
-    width: 50%; }
-  .row .mobile-three {
-    width: 75%; }
-  .row .mobile-four {
-    width: 100%; }
 
 [class*="column"] + [class*="column"]:last-child {
   float: right; }
@@ -373,10 +366,24 @@ textarea {
   float: none;
   margin: 0 auto; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .row {
     width: auto;
     min-width: 0; }
+    .row .mobile-one {
+      width: 25% !important; }
+    .row .mobile-two {
+      width: 50% !important; }
+    .row .mobile-three {
+      width: 75% !important; }
+    .row .mobile-four {
+      width: 100% !important; }
+    .row .mobile-one,
+    .row .mobile-two,
+    .row .mobile-three,
+    .row .mobile-four {
+      float: left !important;
+      padding: 0 15px; }
 
   .column,
   .columns {
@@ -394,8 +401,9 @@ h3, .gamma,
 h4, .delta,
 h5, .epsilon,
 h6, .zeta {
-  font-family: inherit;
-  color: #013440; }
+  font-family: "Droid Sans", Times, Georgia;
+  color: #013440;
+  margin: 20px 0 10px; }
 
 h1, .alpha {
   font-size: 26px;
@@ -656,7 +664,8 @@ pre .regexp {
     background: #f0f0f0; }
   .shep-elem.grid .column, .shep-elem.grid .columns {
     background: #e6e6e6;
-    border-right: 1px solid white; }
+    border-right: 1px solid white;
+    margin-bottom: 1px; }
 
 .navigation {
   list-style-type: none; }
