@@ -196,21 +196,154 @@
                 <p>The Placeholder Feature is implemented in SASS 3.2. So, this is required for Shepherd. To check your version type: <code>sass -v</code> in your ruby console. If you want to update, type <code>gem update sass</code>. This should do the trick.</p>
 
                 <h2>OOCSS & SMACSS</h2>
-                <h4>OOCSS</h4>
-                <p>Shepherd makes use of Nicole Sullivan's <a href="http://oocss.org">OOCSS</a>. If you want reusable markup and css, this is the way to go. I could explain it here, but she explains it better in this presentation.</p>
-                <iframe src="http://de.slideshare.net/slideshow/embed_code/990405" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://de.slideshare.net/stubbornella/object-oriented-css" title="Object Oriented CSS" target="_blank">Object Oriented CSS</a> </strong> from <strong><a href="http://de.slideshare.net/stubbornella" target="_blank">Nicole Sullivan</a></strong> </div>
+                <h3>OOCSS</h3>
+                <p>Shepherd makes use of Nicole Sullivan's <a href="http://oocss.org">OOCSS</a>. If you want reusable markup and css, this is the way to go. I could explain it here, but she explains it better in <a href="http://de.slideshare.net/stubbornella/object-oriented-css">this presentation.</a></p>
 
-                <p>So far implemented:</p>
-                <ul>
-                    <li>The Media Object</li>
-                    <li>The Island Object</li>
-                    <li>The Nav Object</li>
-                    <li>The Pagination Object</li>
-                </ul>
+                <h4>The Media Object</h4>
+                <div class="shep-elem example">
+                    <h4>The Media Object</h4>
+                        <p>Image - Text. Hundreds's of uses. <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Read more.</a></p>
 
-                <p>...to be continued.</p>
+                        <p class="epsilon">Example:</p>
+                        <div class="media-example">
+                            <img src="http://placehold.it/200x100" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad non iure alias nemo aperiam velit eveniet quas rerum nobis cumque dignissimos delectus quibusdam eum tempore officiis ex quod incidunt dolor?</p>
+                        </div>
+                        <p><strong>Your SCSS</strong></p>
+                        <pre>
+                            <code data-language="css">
+                                .your-media-class{
+                                    @extend %media;
+                                }
+                            </code>
+                        </pre>
+                        <p><strong>Your HTML</strong></p>
+                        <pre>
+                            <code data-language="html">
+                                <div class="media-example">
+                                    <img src="http://placehold.it/200x100" alt="">
+                                    <p>lorem ... </p>
+                                </div>
+                            </code>
+                        </pre>
+                </div>
+                <h4>The Island Object</h4>
+                <div class="shep-elem example">
+                    <p>Simple Module, inspired by a post from Harry Roberts. Basically its a single class for boxed off content. <a href="http://csswizardry.com/2011/10/the-island-object/">Read More...</a></p>
+                    <p class="epsilon">Example:</p>
+                    <p class="my-island">This super simple object is basically a single class used to box off content, leaving it closed on all sides like, well, an island.</p>
+                    <pre>
+                        <code data-language="css">
+                            .your-island-class{
+                                @extend %island;
+                            }
+                            //optional you can also use %islet for half padding
+                        </code>
+                    </pre>
+                </div>
 
-                <h2>Modules</h2>
+                <h4>The Nav Object / Pagination Object</h4>
+                <div class="shep-elem example">
+                    <p>This object transforms a list with links in a navigation. Also it comes with some options, so you can choose if you want it centered, horizontal or vertical</p>
+
+                    <p class="epsilon">Examples</p>
+                    <strong>Basic</strong>
+                    <ul class="basic-nav">
+                            <li><a href="">Item-1</a></li>
+                            <li><a href="">Item-2</a></li>
+                            <li><a href="">Item-3</a></li>
+                            <li><a href="">Item-4</a></li>
+                    </ul>
+                    <strong>Main</strong>
+                    <ul class="main-nav">
+                            <li><a href="">Item-1</a></li>
+                            <li><a href="">Item-2</a></li>
+                            <li><a href="">Item-3</a></li>
+                            <li><a href="">Item-4</a></li>
+                    </ul>
+                    <strong>Centered</strong>
+                    <ul class="centered-nav">
+                            <li><a href="">Item-1</a></li>
+                            <li><a href="">Item-2</a></li>
+                            <li><a href="">Item-3</a></li>
+                            <li><a href="">Item-4</a></li>
+                    </ul>
+                    <strong>Vertical</strong>
+                    <ul class="vertical-nav">
+                            <li><a href="">Item-1</a></li>
+                            <li><a href="">Item-2</a></li>
+                            <li><a href="">Item-3</a></li>
+                            <li><a href="">Item-4</a></li>
+                    </ul>
+                    <strong>Breadcrumb</strong>
+                    <ul class="breadcrumb">
+                            <li><a href="">Item-1</a></li>
+                            <li><a href="">Item-2</a></li>
+                            <li><a href="">Item-3</a></li>
+                            <li><a href="">Item-4</a></li>
+                    </ul>
+
+                    <strong>HTML (the structure is the same, except the classname)</strong>
+                    <pre>
+                        <code data-language="html">
+                            <ul class="basic-nav">
+                                    <li><a href="">Item-1</a></li>
+                                    <li><a href="">Item-2</a></li>
+                                    <li><a href="">Item-3</a></li>
+                                    <li><a href="">Item-4</a></li>
+                            </ul>
+                        </code>
+                    </pre>
+
+                    <strong>Your SCSS</strong>
+                    <pre>
+                        <code data-language="css">
+                            .basic-nav{     @extend %nav; }
+                            .main-nav{      @extend %nav; @extend %main-nav; }
+                            .centered-nav{  @extend %nav; @extend %centered;}
+                            .vertical-nav{  @extend %nav; @extend %vertical; }
+                            .breadcrumb{    @extend %nav; @extend %breadcrumb; }
+                        </code>
+                    </pre>
+                </div>
+
+                <h4>The Pagination Object</h4>
+                <div class="shep-elem example">
+                    <p>Creates a horizontal pagination module, based on the nav-object. Its already included there, so you don't need to worry.</p>
+                    <strong class="epsilon">Example</strong>
+
+                    <ul class="my-pagination">
+                         <li><a href="#">First</a></li>
+                         <li><a href="#">Previous</a></li>
+                         <li><a href="#">1</a></li>
+                         <li class="current"><a href="#">2</a></li>
+                         <li><a href="#">3</a></li>
+                         <li><a href="#">Next</a></li>
+                         <li><a href="#">Last</a></li>
+                     </ul>
+
+                    <strong>HTML</strong>
+                     <pre>
+                         <code data-language="html">
+                            <ul class="my-pagination">
+                                 <li><a href="#">First</a></li>
+                                 <li><a href="#">Previous</a></li>
+                                 <li><a href="#">1</a></li>
+                                 <li class="current"><a href="#">2</a></li>
+                                 <li><a href="#">3</a></li>
+                                 <li><a href="#">Next</a></li>
+                                 <li><a href="#">Last</a></li>
+                             </ul>
+                         </code>
+                     </pre>
+                     <strong>SCSS</strong>
+                     <pre>
+                         <code>
+                            .my-pagination{ @extend %pagination;}
+                         </code>
+                     </pre>
+                </div>
+
                 <p>coming soon, its late</p>
             </div>
         </div>

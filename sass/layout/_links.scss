@@ -1,9 +1,11 @@
 a{
     text-decoration: none;
+    color: $link-color;
     &:hover,
     &:active,
     &:focus{
         text-decoration:underline;
+        color: $link-hover;
     }
     &:active,
     &:focus{

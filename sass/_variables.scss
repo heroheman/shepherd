@@ -23,7 +23,8 @@ $alert-color:   red;
 $text-color:    $black;
 $bg-color:      $white;
 $head-color:    $primary2;
-$link-color:    $primary3;
+$link-color:    #09c;
+$link-hover:    $link-color;
 $border-color:  $lightergrey;
 $code-bg-color: $bg-color;
 
@@ -43,10 +44,10 @@ $font-heading:      "Droid Sans", Times, Georgia; //"PT Sans", "Droid Sans"
 $font-mono:         monospace, sans-serif;
 $font-size-h1:      2.6;
 $font-size-h2:      2.4;
-$font-size-h3:      2.2;
-$font-size-h4:      2.0;
-$font-size-h5:      1.8;
-$font-size-h6:      1.6;
+$font-size-h3:      2.0;
+$font-size-h4:      1.8;
+$font-size-h5:      1.5;
+$font-size-h6:      1.2;
 $font-size-small:   0.9;
 
 

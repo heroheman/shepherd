@@ -1,4 +1,3 @@
-@charset "CP850";
 @import url("http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700|PT+Sans:400,700|Droid+Sans:700&.css");
 /* $RESET **************/
 /* File: "common/reset.scss" */
@@ -85,13 +84,13 @@ input, select {
 
 /* $CLEARFIX */
 /* File: "common/clearfix.scss" */
-.row, .navigation {
+.row, .my-pagination, .my-second-pagination, .basic-nav, .main-nav, .centered-nav, .vertical-nav, .breadcrumb, .my-island {
   overflow: none;
   *zoom: 1; }
-  .row::before, .navigation::before, .row::after, .navigation::after {
+  .row::before, .my-pagination::before, .my-second-pagination::before, .basic-nav::before, .main-nav::before, .centered-nav::before, .vertical-nav::before, .breadcrumb::before, .my-island::before, .row::after, .my-pagination::after, .my-second-pagination::after, .basic-nav::after, .main-nav::after, .centered-nav::after, .vertical-nav::after, .breadcrumb::after, .my-island::after {
     content: " ";
     display: table; }
-  .row::after, .navigation::after {
+  .row::after, .my-pagination::after, .my-second-pagination::after, .basic-nav::after, .main-nav::after, .centered-nav::after, .vertical-nav::after, .breadcrumb::after, .my-island::after {
     clear: both; }
 
 /* Site Wide Styles, eg home, body */
@@ -127,14 +126,14 @@ del {
   text-decoration: line-through; }
 
 abbr[title], dfn[title] {
-  border-bottom: 1px dotted #000;
+  border-bottom: 1px dotted black;
   cursor: help; }
 
 hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -414,20 +413,20 @@ h2, .beta {
   font-size: 2.4rem; }
 
 h3, .gamma {
-  font-size: 22px;
-  font-size: 2.2rem; }
-
-h4, .delta {
   font-size: 20px;
   font-size: 2rem; }
 
-h5, .epsilon {
+h4, .delta {
   font-size: 18px;
   font-size: 1.8rem; }
 
+h5, .epsilon {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
 h6, .zeta {
-  font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 15px;
+  font-size: 1.5rem; }
 
 p {
   font-size: 14px;
@@ -437,9 +436,11 @@ pre, code, kbd, samp {
   font-family: monospace, sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #0099cc; }
   a:hover, a:active, a:focus {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #0099cc; }
   a:active, a:focus {
     outline: none; }
 
@@ -520,7 +521,7 @@ a {
  * @version 1.0.4
  */
 pre {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   word-wrap: break-word;
   padding: 6px 10px;
   line-height: 19px;
@@ -541,7 +542,7 @@ pre code {
   border-radius: 0px; }
 
 pre, code {
-  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
   color: #333;
   background: #f8f8f8;
   -moz-border-radius: 3px;
@@ -587,24 +588,69 @@ pre .regexp {
   color: #009926; }
 
 /* The Nav Object */
-.navigation {
+.my-pagination, .my-second-pagination, .basic-nav, .main-nav, .centered-nav, .vertical-nav, .breadcrumb {
   list-style: none;
   margin-left: 0; }
-  .navigation > li,
-  .navigation > li > a {
+  .my-pagination > li, .my-second-pagination > li, .basic-nav > li, .main-nav > li, .centered-nav > li, .vertical-nav > li, .breadcrumb > li,
+  .my-pagination > li > a,
+  .my-second-pagination > li > a,
+  .basic-nav > li > a,
+  .main-nav > li > a,
+  .centered-nav > li > a,
+  .vertical-nav > li > a,
+  .breadcrumb > li > a {
     display: inline-block;
     *display: inline;
     zoom: 1; }
 
-.navigation > li {
+.main-nav {
+  width: 100%;
+  background: #eee; }
+  .main-nav a {
+    padding: 5px 10px; }
+
+.breadcrumb li:before {
+  content: "» "; }
+.breadcrumb li:first-child:before {
+  content: normal; }
+
+.centered-nav {
+  text-align: center; }
+
+.navigation > li, .vertical-nav > li {
   display: block;
   border-top: 1px solid #e6e6e6;
   padding: 10px;
   margin-left: 0; }
 
 /* THe Media Object */
+.media-example {
+  margin: 10px; }
+  .media-example > .img,
+  .media-example > img {
+    float: left;
+    margin-right: 10px; }
+  .media-example .img img,
+  .media-example img {
+    display: block; }
+
+.media-example,
+.media-example .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1; }
+
 /* $PAGINATION Module */
 /* creates a horizontal pagination module, use following pattern */
+.my-pagination, .my-second-pagination {
+  text-align: center; }
+  .my-pagination > li, .my-second-pagination > li {
+    padding: 5px 10px;
+    margin-left: 10px; }
+    .my-pagination > li > a, .my-second-pagination > li > a {
+      padding: 10px;
+      margin: -5px; }
+
 /* mod */
 .mod {
   margin: 10px; }
@@ -652,10 +698,23 @@ pre .regexp {
     background-position: center bottom;
     _zoom: 1; }
 
+.my-island {
+  display: block; }
+
+.my-island {
+  padding: 20px; }
+
+.my-island > :last-child {
+  margin-bottom: 0; }
+
 /* Media Queries for various screen sizes */
-.content > h2 {
+body {
+  background: url(../img/background.jpg) repeat; }
+
+.content > h2, .content h3, .content h4, .content h5, .content h6 {
   border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 10px; }
+  padding-bottom: 0.5em;
+  margin-top: 1.7em; }
 
 .shep-elem.grid {
   text-align: center; }
@@ -663,9 +722,20 @@ pre .regexp {
     margin: 1px auto;
     background: #f0f0f0; }
   .shep-elem.grid .column, .shep-elem.grid .columns {
-    background: #e6e6e6;
+    background: #09c;
+    color: white;
     border-right: 1px solid white;
     margin-bottom: 1px; }
 
 .navigation {
   list-style-type: none; }
+
+.media-example {
+  border: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }

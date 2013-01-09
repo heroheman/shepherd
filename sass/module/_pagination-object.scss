@@ -4,7 +4,7 @@
 // Use the following syntax and extend with %pagination and %nav
 // <ul class="my-pagination-module">
 //     <li class="my-pagination-module-first"><a href="#">First</a></li>
-//     <li clasS="my-pagination-module-prev"><a href="#">Previous</a></li>
+//     <li class="my-pagination-module-prev"><a href="#">Previous</a></li>
 //     <li><a href="#">1</a></li>
 //     <li class="current"><a href="#">2</a></li>
 //     <li><a href="#">3</a></li>
@@ -14,6 +14,7 @@
 
 
 %pagination{
+    @extend %nav;
     text-align:center;
     > li{
         padding:($base-margin / 4) +px ($base-margin / 2) +px;
@@ -30,7 +31,7 @@
 %pagination-last a:after{
         content:" »"; }
 
-%pagination-theme-simple{
+%pagination-simple{
     > li{
         background: $primary1;
         &.current,

@@ -33,7 +33,6 @@
 %centered { text-align: center; }
 
 %vertical{
-    @extend %nav;
     >li{
         display: block;
         border-top: 1px solid $border-color;

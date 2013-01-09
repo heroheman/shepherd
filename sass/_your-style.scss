@@ -8,12 +8,16 @@
 // States
 
 // $GENERAL
+body{
+    background: url(../img/background.jpg) repeat;
+}
 // $TYPOGRAPHY
 // $LAYOUT
 .content{
-    >h2{
+    >h2, h3, h4, h5, h6{
         border-bottom: 1px solid $border-color;
-        padding-bottom: 10px;
+        padding-bottom: 0.5em;
+        margin-top: 1.7em;
     }
 }
 
@@ -25,7 +29,8 @@
             background: #f0f0f0;
         }
         .column, .columns{
-            background: $lightergrey;
+            background: #09c;
+            color: white;
             border-right: 1px solid $white;
             margin-bottom: 1px;
         }
@@ -39,6 +44,29 @@
     list-style-type: none;
 }
 
+.media-example{
+    @extend %media;
+    // background: lighten(#09c, 30%);
+    border: 1px solid $lightergrey;
+    margin: 0;
+    padding: 10px;
+    @include vendorize(border-radius, 4px);
+}
+
+.my-island{
+    @extend %island;
+}
+
+.basic-nav{ @extend %nav; }
+.main-nav{ @extend %nav; @extend %main-nav; }
+.centered-nav{ @extend %nav; @extend %centered;}
+.vertical-nav{ @extend %nav; @extend %vertical; }
+.breadcrumb{ @extend %nav; @extend %breadcrumb; }
+
+.my-pagination{ @extend %pagination; }
+.my-second-pagination{
+    @extend %pagination;
+}
 
 // $STATES
 
