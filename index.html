@@ -103,20 +103,20 @@
                 <p>If you want a grid inside a grid <em>(yo dawg)</em>, just insert a <code>row</code> inside a <code>column</code> Element and you are done.</p>
                 <pre>
                     <code data-language="html">
-                        <div class="row">
-                            <div class="eight column">
-                                <h2>Outer Column</h2>
-                                <div class="row">
-                                    <div class="eight column">
-                                        <h3>Hi, i am a column in a column</h3>
-                                    </div>
-                                    <div class="four columns">
-                                        <img src="xzibit.jpg" alt="yo dawg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="four column">Another outer column</div>
-                        </div>
+<div class="row">
+    <div class="eight column">
+        <h2>Outer Column</h2>
+        <div class="row">
+            <div class="eight column">
+                <h3>Hi, i am a column in a column</h3>
+            </div>
+            <div class="four columns">
+                <img src="xzibit.jpg" alt="yo dawg">
+            </div>
+        </div>
+    </div>
+    <div class="four column">Another outer column</div>
+</div>
                     </code>
                 </pre>
 
@@ -143,11 +143,11 @@
                 <h4>Example</h4>
                 <pre>
                     <code data-language="html">
-                        <div class="row">
-                            <header class="twelve columns mobile-four">twelve columns mobile-four</header>
-                            <nav class="four columns mobile-two">four columns mobile-two</nav>
-                            <div class="eight columns mobile-two">eight columns mobile-two</div>
-                        </div>
+<div class="row">
+    <header class="twelve columns mobile-four">twelve columns mobile-four</header>
+    <nav class="four columns mobile-two">four columns mobile-two</nav>
+    <div class="eight columns mobile-two">eight columns mobile-two</div>
+</div>
                     </code>
                 </pre>
 
@@ -164,33 +164,33 @@
                 <h4>Example SASS CSS:</h4>
                 <pre>
                     <code data-language="css">
-                        .my-module{
-                            @include %placeholder-module;
-                            background: #f00;
-                        }
-                        .another-module{
-                            @include %placeholder-module;
-                            background: #baa;
-                        }
+.my-module{
+    @include %placeholder-module;
+    background: #f00;
+}
+.another-module{
+    @include %placeholder-module;
+    background: #baa;
+}
 
-                        %placeholder-module{
-                            /* module stuff */
-                        }
+%placeholder-module{
+    /* module stuff */
+}
                     </code>
                 </pre>
                 <h4>Example Output CSS:</h4>
                 <pre>
                     <code data-language="css">
-                        .my-module,
-                        .another-module{
-                            @include %placeholder-module;
-                        }
-                        .my-module{
-                            background: #foo;
-                        }
-                        .another-module{
-                            background: #baa;
-                        }
+.my-module,
+.another-module{
+    @include %placeholder-module;
+}
+.my-module{
+    background: #foo;
+}
+.another-module{
+    background: #baa;
+}
                     </code>
                 </pre>
                 <p>The Placeholder Feature is implemented in SASS 3.2. So, this is required for Shepherd. To check your version type: <code>sass -v</code> in your ruby console. If you want to update, type <code>gem update sass</code>. This should do the trick.</p>
@@ -212,18 +212,18 @@
                         <p><strong>Your SCSS</strong></p>
                         <pre>
                             <code data-language="css">
-                                .your-media-class{
-                                    @extend %media;
-                                }
+.your-media-class{
+    @extend %media;
+}
                             </code>
                         </pre>
                         <p><strong>Your HTML</strong></p>
                         <pre>
                             <code data-language="html">
-                                <div class="media-example">
-                                    <img src="http://placehold.it/200x100" alt="">
-                                    <p>lorem ... </p>
-                                </div>
+<div class="media-example">
+    <img src="http://placehold.it/200x100" alt="">
+    <p>lorem ... </p>
+</div>
                             </code>
                         </pre>
                 </div>
@@ -234,10 +234,10 @@
                     <p class="my-island">This super simple object is basically a single class used to box off content, leaving it closed on all sides like, well, an island.</p>
                     <pre>
                         <code data-language="css">
-                            .your-island-class{
-                                @extend %island;
-                            }
-                            //optional you can also use %islet for half padding
+.your-island-class{
+    @extend %island;
+}
+//optional you can also use %islet for half padding
                         </code>
                     </pre>
                 </div>
@@ -286,23 +286,23 @@
                     <strong>HTML (the structure is the same, except the classname)</strong>
                     <pre>
                         <code data-language="html">
-                            <ul class="basic-nav">
-                                    <li><a href="">Item-1</a></li>
-                                    <li><a href="">Item-2</a></li>
-                                    <li><a href="">Item-3</a></li>
-                                    <li><a href="">Item-4</a></li>
-                            </ul>
+<ul class="basic-nav">
+        <li><a href="">Item-1</a></li>
+        <li><a href="">Item-2</a></li>
+        <li><a href="">Item-3</a></li>
+        <li><a href="">Item-4</a></li>
+</ul>
                         </code>
                     </pre>
 
                     <strong>Your SCSS</strong>
                     <pre>
                         <code data-language="css">
-                            .basic-nav{     @extend %nav; }
-                            .main-nav{      @extend %nav; @extend %main-nav; }
-                            .centered-nav{  @extend %nav; @extend %centered;}
-                            .vertical-nav{  @extend %nav; @extend %vertical; }
-                            .breadcrumb{    @extend %nav; @extend %breadcrumb; }
+.basic-nav{     @extend %nav; }
+.main-nav{      @extend %nav; @extend %main-nav; }
+.centered-nav{  @extend %nav; @extend %centered;}
+.vertical-nav{  @extend %nav; @extend %vertical; }
+.breadcrumb{    @extend %nav; @extend %breadcrumb; }
                         </code>
                     </pre>
                 </div>
@@ -325,26 +325,96 @@
                     <strong>HTML</strong>
                      <pre>
                          <code data-language="html">
-                            <ul class="my-pagination">
-                                 <li><a href="#">First</a></li>
-                                 <li><a href="#">Previous</a></li>
-                                 <li><a href="#">1</a></li>
-                                 <li class="current"><a href="#">2</a></li>
-                                 <li><a href="#">3</a></li>
-                                 <li><a href="#">Next</a></li>
-                                 <li><a href="#">Last</a></li>
-                             </ul>
+<ul class="my-pagination">
+     <li><a href="#">First</a></li>
+     <li><a href="#">Previous</a></li>
+     <li><a href="#">1</a></li>
+     <li class="current"><a href="#">2</a></li>
+     <li><a href="#">3</a></li>
+     <li><a href="#">Next</a></li>
+     <li><a href="#">Last</a></li>
+ </ul>
                          </code>
                      </pre>
                      <strong>SCSS</strong>
                      <pre>
-                         <code>
-                            .my-pagination{ @extend %pagination;}
+                         <code data-language=css>
+.my-pagination{ @extend %pagination;}
                          </code>
                      </pre>
                 </div>
 
-                <p>coming soon, its late</p>
+                <h3>SMACSS</h3>
+                <p>Coming Soon.</p>
+
+                <h2>Modules</h2>
+                <h3>Image Grid</h3>
+                <p>The Image Grid is inspired by a module from Brad Frost. The Output is an Image-Grid, with a responsive amount of images in each row. <a href="http://codepen.io/bradfrost/pen/xkcBn">See Demo.</a></p>
+
+                <strong>HTML</strong>
+                <pre>
+                    <code data-language=html>
+<ul class="my-image-grid">
+    <li><img src="link/to/image.png" alt="your image"></li>
+    <li><img src="link/to/image.png" alt="your image"></li>
+    <li><img src="link/to/image.png" alt="your image"></li>
+    <li><img src="link/to/image.png" alt="your image"></li>
+    <!-- etc ...  -->
+</ul>
+                    </code>
+                </pre>
+
+                <strong>SCSS</strong>
+                <pre>
+                    <code data-language="css">
+.my-image-grid{
+    @extend %image-grid;
+}
+                    </code>
+                </pre>
+
+                <h3>Thumb Text Grid</h3>
+                <p>The Thumb-Text Grid displays on big screens a classic "image thumbnail on the left - description text on the right" element, similar to the "media object", but is adaptive on smaller screens. <a href="http://codepen.io/bradfrost/full/ykalp">See Demo by Brad Frost</a>.</p>
+                <p>Please use with caution. This module is right now too complicated. </p>
+
+                <strong>HTML</strong>
+                <pre>
+                    <code data-language=html>
+<ul class="my-list-element">
+    <li>
+        <a href="#" class="inner">
+            <div class="li-img">
+                <img src="link/to/image.png" alt="Image Alt Text" />
+            </div>
+            <div class="li-text">
+                <h4 class="li-head">Title</h4>
+                <p class="li-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet tellus velit, ut semper neque.</p>
+                <p class="li-action">Read More</p>
+            </div>
+        </a>
+    </li>
+    <li>
+        <!-- .... and again and again -->
+    </li>
+
+    <li>
+        <!-- .... and again and again -->
+    </li>
+</ul>
+                    </code>
+                </pre>
+
+                <strong>SCSS</strong>
+                <pre>
+                    <code data-language=css>
+.my-list-element{
+    @extend %thumb-text-grid;
+}
+                    </code>
+                </pre>
+
+
+
             </div>
         </div>
 

@@ -139,12 +139,6 @@ hr {
 
 pre {
   background: #bfbfbf;
-  white-space: pre;
-  /* CSS2 */
-  white-space: pre-wrap;
-  /* CSS 2.1 */
-  white-space: pre-line;
-  /* CSS 3 (and 2.1 as well, actually) */
   word-wrap: break-word;
   /* IE */ }
 
@@ -710,6 +704,9 @@ pre .regexp {
 /* Media Queries for various screen sizes */
 body {
   background: url(../img/background.jpg) repeat; }
+
+pre {
+  white-space: pre-wrap; }
 
 .content > h2, .content h3, .content h4, .content h5, .content h6 {
   border-bottom: 1px solid #e6e6e6;
