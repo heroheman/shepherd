@@ -359,7 +359,7 @@ textarea {
   float: none;
   margin: 0 auto; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 700px) {
   .row {
     width: auto;
     min-width: 0; }
@@ -708,6 +708,9 @@ body {
 pre {
   white-space: pre-wrap; }
 
+.header h1 {
+  margin-top: 1.5em; }
+
 .content > h2, .content h3, .content h4, .content h5, .content h6 {
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 0.5em;
@@ -725,14 +728,31 @@ pre {
     margin-bottom: 1px; }
 
 .navigation {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-top: 2em; }
 
 .media-example {
   border: 1px solid #e6e6e6;
   margin: 0;
   padding: 10px;
+  background: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px; }
+
+.basic-nav {
+  background: white; }
+
+.centered-nav {
+  background: white; }
+
+.vertical-nav {
+  background: white; }
+
+.breadcrumb {
+  background: white; }
+
+.my-pagination {
+  background: white; }

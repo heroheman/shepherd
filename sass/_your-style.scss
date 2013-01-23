@@ -15,6 +15,9 @@ body{
 pre{ white-space: pre-wrap; }
 // $TYPOGRAPHY
 // $LAYOUT
+
+.header h1{ margin-top: 1.5em; }
+
 .content{
     >h2, h3, h4, h5, h6{
         border-bottom: 1px solid $border-color;
@@ -44,6 +47,7 @@ pre{ white-space: pre-wrap; }
 .navigation{
     @extend %vertical;
     list-style-type: none;
+    margin-top: 2em;
 }
 
 .media-example{
@@ -52,6 +56,7 @@ pre{ white-space: pre-wrap; }
     border: 1px solid $lightergrey;
     margin: 0;
     padding: 10px;
+    background: white;
     @include vendorize(border-radius, 4px);
 }
 
@@ -59,13 +64,13 @@ pre{ white-space: pre-wrap; }
     @extend %island;
 }
 
-.basic-nav{ @extend %nav; }
-.main-nav{ @extend %nav; @extend %main-nav; }
-.centered-nav{ @extend %nav; @extend %centered;}
-.vertical-nav{ @extend %nav; @extend %vertical; }
-.breadcrumb{ @extend %nav; @extend %breadcrumb; }
+.basic-nav{ @extend %nav;  background: white;}
+.main-nav{ @extend %nav; @extend %main-nav;}
+.centered-nav{ @extend %nav; @extend %centered; background: white;}
+.vertical-nav{ @extend %nav; @extend %vertical;  background: white;}
+.breadcrumb{ @extend %nav; @extend %breadcrumb; background: white; }
 
-.my-pagination{ @extend %pagination; }
+.my-pagination{ @extend %pagination; background: white; }
 .my-second-pagination{
     @extend %pagination;
 }

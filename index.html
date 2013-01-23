@@ -32,21 +32,24 @@
                 <div class="header">
                     <h1>Shepherd</h1>
                 </div>
-                <!-- <div>
+                <div>
                     <ul class="navigation">
-                        <li><a href="#">Start</a></li>
-                        <li><a href="#">Grid</a></li>
-                        <li><a href="#">OOCSS</a></li>
-                        <li><a href="#">Placeholder</a></li>
-                        <li><a href="#">Modules</a></li>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#placeholder">Placeholder</a></li>
+                        <li><a href="#oocss">OOCSS</a></li>
+                        <li><a href="#module">Modules</a></li>
                     </ul>
-                </div> -->
+                </div>
 
             </div>
             <div class="content eight columns">
-                <h2>Start</h2>
+                <h2 id="start">Start</h2>
+                <p class="delta">
+                    Shepherd Framework is a CSS starter kit for daily prototyping work.
+                </p>
                 <p>
-                    Shepherd Framework is my attempt of creating a CSS starter kit for my daily work. I try to include Best Practices from the Frontend Development Community without the bloat. Also its focused on Responsive Webdesign - but its also usable for old school websites. It's running on SASS and is using the principles of SMACSS and OOCSS. Shepherd makes use of the placeholder feature introduced in SASS 3.2, so even its feature rich, its not in your final CSS when you don't use it.
+                    I try to include Best Practices from the Frontend Development Community without the bloat. Also its focused on Responsive Webdesign - but its also usable for old school websites. It's running on SASS and is using the principles of SMACSS and OOCSS. Shepherd makes use of the placeholder feature introduced in SASS 3.2, so even its feature rich, its not in your final CSS when you don't use it.
                 </p>
                 <p>
                     Its not a Framework like Twitter Bootstrap or Zurb's Foundation - if you want already styled components I suggest to try the former mentioned Tools.
@@ -54,7 +57,9 @@
                 <p>
                     <strong>RIGHT NOW IN DEVELOPMENT - USE ON OWN RISK! YOU MIGHT GET HURT.</strong> Its right now in an early alpha stage but its usable - but don't expect an easy update in a working project.
                 </p>
-                <h2>Grid</h2>
+                <a href="https://github.com/heroheman/shepherd" class="btn primary medium">Github</a>
+                <a href="https://github.com/heroheman/shepherd/archive/master.zip" class="btn primary medium">Download</a>
+                <h2 id="grid">Grid</h2>
                 <div class="shep-block">
                     <h4>Basic Usage</h4>
                     <p>
@@ -62,11 +67,13 @@
                     </p>
                     <h5>Example:</h5>
                         <pre>
-                            <code data-language="html"><div class="row">
-                                <header class="twelve columns">OHAI, this is my head</header>
-                                <nav class="four columns">Here is a navigation</nav>
-                                <div class="eight columns">Content pops here</div>
-                            </div></code>
+                            <code data-language="html">
+<div class="row">
+    <header class="twelve columns">Little Header</header>
+    <nav class="four columns">Here is a navigation</nav>
+    <div class="eight columns">Content pops here</div>
+</div>
+                            </code>
                         </pre>
                     <div class="shep-elem grid">
                         <div class="row">
@@ -159,7 +166,7 @@
                         </div>
                 </div>
 
-                <h2>Placeholder</h2>
+                <h2 id="placeholder">Placeholder</h2>
                 <p>SASS allows to include placeholder in your SCSS. It is similar to the <code>include</code> feature, but with the advantage that you can write semantic correct markup and modules are only in your output CSS, then you really need it. This avoids code bloat and allows to use Shepherd also in the production - without cleaning your project from unused features.</p>
                 <h4>Example SASS CSS:</h4>
                 <pre>
@@ -195,7 +202,7 @@
                 </pre>
                 <p>The Placeholder Feature is implemented in SASS 3.2. So, this is required for Shepherd. To check your version type: <code>sass -v</code> in your ruby console. If you want to update, type <code>gem update sass</code>. This should do the trick.</p>
 
-                <h2>OOCSS & SMACSS</h2>
+                <h2 id="oocss">OOCSS & SMACSS</h2>
                 <h3>OOCSS</h3>
                 <p>Shepherd makes use of Nicole Sullivan's <a href="http://oocss.org">OOCSS</a>. If you want reusable markup and css, this is the way to go. I could explain it here, but she explains it better in <a href="http://de.slideshare.net/stubbornella/object-oriented-css">this presentation.</a></p>
 
@@ -347,7 +354,7 @@
                 <h3>SMACSS</h3>
                 <p>Coming Soon.</p>
 
-                <h2>Modules</h2>
+                <h2 id="module">Modules</h2>
                 <h3>Image Grid</h3>
                 <p>The Image Grid is inspired by a module from Brad Frost. The Output is an Image-Grid, with a responsive amount of images in each row. <a href="http://codepen.io/bradfrost/pen/xkcBn">See Demo.</a></p>
 
