@@ -51,9 +51,10 @@ $font-size-small:   0.9;
 
 // Links
 $link-color          : rgb(1,53,104);
-$link-color-hover    : darken($linkcolor, 10);
-$link-color-visited  : darken($linkcolorhover, 10);
-$link-color-focus    : darken($linkcolorvisited, 10);
+$link-color-hover    : darken($link-color, 10);
+$link-color-visited  : darken($link-color-hover, 10);
+$link-color-focus    : darken($link-color-visited, 10);
+$link-weight         : bold;
 
 // Defaults
 $border-radius: 5;
