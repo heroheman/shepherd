@@ -1,11 +1,12 @@
 .btn{
     @include font-size(1.4);
+    // box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 5px 5px rgba(0, 0, 0, .2);
     background: $btn-primary;
     border-bottom: 1px solid $lightgrey;
     border: 1px solid $lightergrey;
-    // box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 5px 5px rgba(0, 0, 0, .2);
     color: $btn-text;
     display: inline-block;
+    font-family: $font-button;
     line-height: 1;
     padding: 10px 15px;
     position: inline-block;

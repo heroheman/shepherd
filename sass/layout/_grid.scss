@@ -54,7 +54,7 @@
 // Centered Grid Elements
 .column,
 .columns{
-    .centered{
+    &.centered{
         float: none;
         margin: 0 auto;
     }
