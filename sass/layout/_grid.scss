@@ -61,7 +61,7 @@
 }
 
 // Mobile View
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 48em) {
     .row{
         width: auto;
         min-width: 0;
@@ -73,12 +73,6 @@
         &:last-child{
             float: none;
         }
-        // &:before,
-        // &:after{
-        //     content: "";
-        //     display: table;
-        // }
-        // &:after{ clear: both; }
     }
 
     [class*="column"] + [class*="column"]:last-child { float: none; }
