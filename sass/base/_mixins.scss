@@ -36,8 +36,12 @@
 
 // REM FONT SIZE
 @mixin font-size($sizeValue: 1.6){
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
+    @if $is-rem {
+        font-size: ($sizeValue * 10) + px;
+        font-size: $sizeValue + rem;
+    }@else{
+        font-size: $sizeValue + em;
+    }
 }
 
 // Import font-face
