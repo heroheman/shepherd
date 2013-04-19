@@ -7,7 +7,7 @@
 .column, .columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }
 .row {
     @extend %clearfix;
-    width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto;
+    width: $grid-max-size; max-width: 100%; margin: 0 auto;
     .one    { width: 8.33% }
     .two    { width: 16.66% }
     .three  { width: 25% }
