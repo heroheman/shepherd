@@ -427,7 +427,7 @@ a {
   a:active, a:focus {
     outline: none; }
 
-.btn {
+.button {
   font-size: 1.4em;
   background: #0099cc;
   border-bottom: 1px solid #bfbfbf;
@@ -440,57 +440,57 @@ a {
   position: inline-block;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
-  .btn:hover, .btn:active, .btn:visited {
+  .button:hover, .button:active, .button:visited {
     text-decoration: none; }
-  .btn:hover {
+  .button:hover {
     background: #004d66; }
-  .btn.tiny {
+  .tiny.button {
     padding: 5px 5px;
     font-size: 1em; }
-  .btn.small {
+  .small.button {
     padding: 7px 10px;
     font-size: 1.2em; }
-  .btn.medium {
+  .medium.button {
     padding: 10px 15px;
     font-size: 1.4em; }
-  .btn.big {
+  .big.button {
     padding: 15px 30px;
     font-size: 1.8em; }
-  .btn.primary {
+  .primary.button {
     background: #0099cc; }
-    .btn.primary:hover, .btn.primary:active, .btn.primary:focus {
+    .primary.button:hover, .primary.button:active, .primary.button:focus {
       background: #0086b3; }
-  .btn.secondary {
+  .secondary.button {
     background: deepskyblue; }
-    .btn.secondary:hover, .btn.secondary:active, .btn.secondary:focus {
+    .secondary.button:hover, .secondary.button:active, .secondary.button:focus {
       background: #00ace6; }
-  .btn.success {
+  .success.button {
     background: green; }
-    .btn.success:hover, .btn.success:active, .btn.success:focus {
+    .success.button:hover, .success.button:active, .success.button:focus {
       background: #006700; }
-  .btn.alert {
+  .alert.button {
     background: red; }
-    .btn.alert:hover, .btn.alert:active, .btn.alert:focus {
+    .alert.button:hover, .alert.button:active, .alert.button:focus {
       background: #e60000; }
-  .btn.radius {
+  .radius.button {
     border-radius: 5px; }
-  .btn.pill {
+  .pill.button {
     border-radius: 1000px; }
 
-.btn-group {
+.button-group {
   list-style: none;
   padding: 0;
   margin: 0;
   display: inline-block; }
-  .btn-group > li {
+  .button-group > li {
     float: left;
     margin: 0 0 0 -1px; }
-    .btn-group > li:first-child {
+    .button-group > li:first-child {
       margin-left: 0; }
-  .btn-group.radius > li:first-child a {
+  .radius.button-group > li:first-child a {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px; }
-  .btn-group.radius > li:last-child a {
+  .radius.button-group > li:last-child a {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px; }
 

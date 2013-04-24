@@ -10,6 +10,10 @@
 // $GENERAL
 // $TYPOGRAPHY
 // $LAYOUT
+
+.button{ @extend %btn; }
+.button-group{ @extend %btn-group; }
+
 // $MODULES
 
 .my-module{
