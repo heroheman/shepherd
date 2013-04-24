@@ -1,6 +1,6 @@
 **Version 0.7**
 
-### Introduction
+## Introduction
 Shepherd Framework is my attempt of creating a CSS starter kit for my daily work. I try to include Best Practices from the Frontend Development Community without the bloat. Also its focused on Responsive Webdesign - but its also usable for old school websites.
 It's running on [SASS](http://www.sass-lang.com) and is using the principles of [SMACSS](http://www.smacss.com) and [OOCSS](http://www.oocss.org). Shepherd makes use of the placeholder feature introduced in SASS 3.2, so even its feature rich, its not in your final CSS when you don't use it.
 
@@ -8,10 +8,10 @@ Its not a Framework like [Twitter Bootstrap](http://twitter.github.com/bootstrap
 
 Its right now in an early alpha stage but its usable - but don't get too attached to the folder structre and modules. Update carefully.
 
-### Documentation
+## Documentation
 I wrote a rough, already outdated, ugly documentation: http://heroheman.github.io/shepherd/
 
-### SASS? Why not Compass?
+### Vanilla SASS? Why not Compass?
 Shepherd is designed with [Compass](http://compass-style.org) in mind, but its not necessary. Basic mixins are provided e.g. the vendorize function. There is a config.rb in the root folder, so you could also use compass commands (if installed).
 
 ## Installation
