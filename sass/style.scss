@@ -1,7 +1,7 @@
-// 1. $variables
+// 1. Variables
 @import "variables";
 
-// 2. $base
+// 2. Base
 //    $mixins
 @import "base/mixins";
 //    $reset
@@ -45,9 +45,11 @@
 @import "module/mod-image-grid";
 @import "module/mod-text-grid";
 
+// 5. Your Style - Insert your Style here - delete preset demo styles for your pleasure
+@import "your-style";
+
 // 5. States - Mediaqueries, print and everything else (right now not everything else)
 @import "state/media-queries";
 // @import "state/print";
 
-// 5. Your Style - Insert your Style here - delete preset demo styles for your pleasure
-@import "your-style";
+
