@@ -1,0 +1,618 @@
+@charset "UTF-8";
+/* $RESET **************/
+/* File: "common/reset.scss" */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* $TODO change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* $TODO change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* $TODO change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* $CLEARFIX */
+/* File: "common/clearfix.scss" */
+.row, .vertical-navigation, .main-navigation, .pagination, .my-module {
+  overflow: none;
+  *zoom: 1; }
+  .row::before, .vertical-navigation::before, .main-navigation::before, .pagination::before, .my-module::before, .row::after, .vertical-navigation::after, .main-navigation::after, .pagination::after, .my-module::after {
+    content: " ";
+    display: table; }
+  .row::after, .vertical-navigation::after, .main-navigation::after, .pagination::after, .my-module::after {
+    clear: both; }
+
+/* Site Wide Styles, eg home, body */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  overflow-y: scroll; }
+
+body {
+  background: white;
+  font-size: 1.4em;
+  line-height: 1.6em; }
+
+strong, th {
+  font-weight: bold; }
+
+em {
+  font-weight: italic; }
+
+small small {
+  font-size: 0.9em; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+pre {
+  background: #bfbfbf;
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: disc; }
+
+ol li, ul li {
+  margin-left: 20px; }
+
+dl dt {
+  font-weight: bold; }
+
+p, dl, hr,
+h1, h2, h3, h4, h5, h6,
+ol, ul,
+pre, table, blockquote,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px; }
+
+q {
+  quotes: "‘" "’" "“" "”"; }
+  q:before {
+    content: "‘";
+    content: open-quote; }
+  q:after {
+    content: "’";
+    content: close-quote; }
+  q q:before {
+    content: "“";
+    content: open-quote; }
+  q q:after {
+    content: "”";
+    content: close-quote; }
+
+blockquote {
+  quotes: "“" "”"; }
+  blockquote p:before {
+    content: "“";
+    content: open-quote; }
+  blockquote p:after {
+    content: "";
+    content: no-close-quote; }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+    blockquote p:last-of-type:after {
+      content: "”";
+      content: close-quote; }
+
+.source {
+  display: block;
+  text-indent: 0; }
+  .source:before {
+    content: "—"; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  font: 100%; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+button {
+  width: auto;
+  overflow: visible; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+::-moz-selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #fcd700;
+  color: #fff;
+  text-shadow: none; }
+
+a:link {
+  -webkit-tap-highlight-color: #fcd700; }
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+/* $TODO: split in separate files? */
+/* Offscreen text */
+/* GRID */
+/* File: "common/grid.scss" */
+.column, .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative; }
+
+.row {
+  width: 90em;
+  max-width: 100%;
+  margin: 0 auto; }
+  .row .one {
+    width: 8.33%; }
+  .row .two {
+    width: 16.66%; }
+  .row .three {
+    width: 25%; }
+  .row .four {
+    width: 33.33%; }
+  .row .five {
+    width: 41.66%; }
+  .row .six {
+    width: 50%; }
+  .row .seven {
+    width: 58.33%; }
+  .row .eight {
+    width: 66.66%; }
+  .row .nine {
+    width: 75%; }
+  .row .ten {
+    width: 83.33%; }
+  .row .eleven {
+    width: 91.66%; }
+  .row .twelve {
+    width: 100%; }
+  .row .row {
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    margin: 0 -15px; }
+  .row .push-one {
+    margin-left: 8.33%; }
+  .row .push-two {
+    margin-left: 16.66%; }
+  .row .push-three {
+    margin-left: 25%; }
+  .row .push-four {
+    margin-left: 33.33%; }
+  .row .push-five {
+    margin-left: 41.66%; }
+  .row .push-six {
+    margin-left: 50%; }
+  .row .push-seven {
+    margin-left: 58.33%; }
+  .row .push-eight {
+    margin-left: 66.66%; }
+  .row .push-nine {
+    margin-left: 75%; }
+  .row .push-ten {
+    margin-left: 83.33%; }
+  .row .push-eleven {
+    margin-left: 91.66%; }
+  .row .push-twelve {
+    margin-left: 100%; }
+  .row .mobile-one {
+    width: 25%; }
+  .row .mobile-two {
+    width: 50%; }
+  .row .mobile-three {
+    width: 75%; }
+  .row .mobile-four {
+    width: 100%; }
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right; }
+
+[class*="column"] + [class*="column"].end {
+  float: left; }
+
+.column.centered,
+.columns.centered {
+  float: none;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 48em) {
+  .row {
+    width: auto;
+    min-width: 0; }
+
+  .column,
+  .columns {
+    width: auto !important;
+    float: none; }
+    .column:last-child,
+    .columns:last-child {
+      float: none; }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: none; } }
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  font-family: inherit;
+  color: #013440; }
+
+h1, .alpha {
+  font-size: 2.6em; }
+
+h2, .beta {
+  font-size: 2.4em; }
+
+h3, .gamma {
+  font-size: 2.2em; }
+
+h4, .delta {
+  font-size: 2em; }
+
+h5, .epsilon {
+  font-size: 1.8em; }
+
+h6, .zeta {
+  font-size: 1.8em; }
+
+p {
+  font-size: 1.4em; }
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #013568;
+  font-weight: bold; }
+  a:hover, a:active, a:focus {
+    text-decoration: underline; }
+  a:active, a:focus {
+    outline: none; }
+
+.btn {
+  font-size: 1.4em;
+  background: #0099cc;
+  border-bottom: 1px solid #bfbfbf;
+  border: 1px solid #e6e6e6;
+  color: white;
+  display: inline-block;
+  font-family: inherit;
+  line-height: 1;
+  padding: 10px 15px;
+  position: inline-block;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
+  .btn:hover, .btn:active, .btn:visited {
+    text-decoration: none; }
+  .btn:hover {
+    background: #004d66; }
+  .btn.tiny {
+    padding: 5px 5px;
+    font-size: 1em; }
+  .btn.small {
+    padding: 7px 10px;
+    font-size: 1.2em; }
+  .btn.medium {
+    padding: 10px 15px;
+    font-size: 1.4em; }
+  .btn.big {
+    padding: 15px 30px;
+    font-size: 1.8em; }
+  .btn.primary {
+    background: #0099cc; }
+    .btn.primary:hover, .btn.primary:active, .btn.primary:focus {
+      background: #0086b3; }
+  .btn.secondary {
+    background: deepskyblue; }
+    .btn.secondary:hover, .btn.secondary:active, .btn.secondary:focus {
+      background: #00ace6; }
+  .btn.success {
+    background: green; }
+    .btn.success:hover, .btn.success:active, .btn.success:focus {
+      background: #006700; }
+  .btn.alert {
+    background: red; }
+    .btn.alert:hover, .btn.alert:active, .btn.alert:focus {
+      background: #e60000; }
+  .btn.radius {
+    border-radius: 5px; }
+  .btn.pill {
+    border-radius: 1000px; }
+
+.btn-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block; }
+  .btn-group > li {
+    float: left;
+    margin: 0 0 0 -1px; }
+    .btn-group > li:first-child {
+      margin-left: 0; }
+  .btn-group.radius > li:first-child a {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; }
+  .btn-group.radius > li:last-child a {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; }
+
+/* The Nav Object */
+.vertical-navigation, .main-navigation, .pagination {
+  list-style: none;
+  margin-left: 0; }
+  .vertical-navigation > li, .main-navigation > li, .pagination > li,
+  .vertical-navigation > li > a,
+  .main-navigation > li > a,
+  .pagination > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+
+.main-navigation {
+  width: 100%;
+  background: #eee; }
+  .main-navigation a {
+    padding: 5px 10px; }
+
+.vertical-navigation > li {
+  display: block;
+  border-top: 1px solid #e6e6e6;
+  padding: 10px;
+  margin-left: 0; }
+
+/* THe Media Object */
+.mod-start-teaser {
+  margin: 10px; }
+  .mod-start-teaser > .img,
+  .mod-start-teaser > img {
+    float: left;
+    margin-right: 10px; }
+  .mod-start-teaser .img img,
+  .mod-start-teaser img {
+    display: block; }
+
+.mod-start-teaser,
+.mod-start-teaser .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1; }
+
+/* $PAGINATION Module */
+/* creates a horizontal pagination module, use following pattern */
+.pagination {
+  text-align: center; }
+  .pagination > li {
+    padding: 5px 10px;
+    margin-left: 10px; }
+    .pagination > li > a {
+      padding: 10px;
+      margin: -5px; }
+
+.pagination .pagination-first a:before {
+  content: "« "; }
+
+.pagination .pagination-last a:after {
+  content: " »"; }
+
+.pagination > li {
+  background: #002635; }
+  .pagination > li.current, .pagination > li:hover {
+    background: #ab1a25; }
+  .pagination > li > a {
+    color: #d97925; }
+
+/* mod */
+.mod {
+  margin: 10px; }
+  .mod .bd, .mod .ft, .mod .hd {
+    overflow: hidden;
+    *overflow: visible;
+    zoom: 1; }
+  .mod b.top, .mod b.bottom {
+    display: block;
+    background-repeat: no-repeat;
+    font-size: 1%;
+    position: relative;
+    z-index: 10; }
+    .mod b.top b, .mod b.bottom b {
+      display: block;
+      background-repeat: no-repeat;
+      font-size: 1%;
+      position: relative;
+      z-index: 10; }
+  .mod .tl, .mod .tr, .mod .bl, .mod .br {
+    height: 10px;
+    width: 10px;
+    float: left; }
+  .mod .tl {
+    background-position: left top; }
+  .mod .tr {
+    background-position: right top; }
+  .mod .bl {
+    background-position: left bottom; }
+  .mod .br {
+    background-position: right bottom;
+    float: right; }
+  .mod .tr {
+    float: right;
+    overflow: hidden;
+    margin-bottom: -32000px; }
+  .mod .tl {
+    overflow: hidden;
+    margin-bottom: -32000px; }
+  .mod .bl, .mod .br {
+    margin-top: -10px; }
+  .mod .top {
+    background-position: center top; }
+  .mod .bottom {
+    background-position: center bottom;
+    _zoom: 1; }
+
+.my-module {
+  display: block; }
+
+.my-module {
+  padding: 20px; }
+
+.my-module > :last-child {
+  margin-bottom: 0; }
+
+/* Media Queries for various screen sizes */
