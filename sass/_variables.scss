@@ -67,6 +67,10 @@ $link-weight         : bold;
 $border-radius: 5;
 $base-margin:   20;
 
+// Marked Text
+$mark-bg            : $primary2;
+$mark-color         : white;
+
 // Support IE?
 // used in some compass mixins
 // eg: to avoid those terrible progid filter

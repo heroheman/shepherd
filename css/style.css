@@ -252,13 +252,13 @@ button {
   -ms-interpolation-mode: bicubic; }
 
 ::-moz-selection {
-  background: #fcd700;
-  color: #fff;
+  background: #013440;
+  color: white;
   text-shadow: none; }
 
 ::selection {
-  background: #fcd700;
-  color: #fff;
+  background: #013440;
+  color: white;
   text-shadow: none; }
 
 a:link {
