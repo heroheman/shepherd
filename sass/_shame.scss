@@ -1,0 +1,29 @@
+// Idea: http://csswizardry.com/2013/04/shame-css/
+
+// Try:  $ git blame shame.css
+
+// Rules:
+//     Obviously you need some kind of rules and criteria:
+
+//     1. If it’s a hack, it goes in shame.css.
+//     2. Document all hacks fully:
+//     3. What part of the codebase does it relate to?
+//     4. Why was this needed?
+//     5. How does this fix it?
+//     6. How might you fix it properly, given more time?
+//     7. Do not blame the developer; if they explained why they had to do it then their reasons are probably (hopefully) valid.
+//     8. Try and clean shame.css up when you have some down time.
+//         Even better, get tech-debt story in which you can dedicate actual sprint time to it.
+
+// Example:
+
+    // Nav specificity fix.
+
+    // Someone used an ID in the header code (`#header a{}`) which trumps the
+    // nav selectors (`.site-nav a{}`). Use !important to override it until I
+    // have time to refactor the header stuff.
+
+    // .site-nav a{
+    //     color:#BADA55!important;
+    // }
+
