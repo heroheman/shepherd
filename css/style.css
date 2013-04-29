@@ -252,12 +252,12 @@ button {
   -ms-interpolation-mode: bicubic; }
 
 ::-moz-selection {
-  background: #013440;
+  background: #40b3df;
   color: white;
   text-shadow: none; }
 
 ::selection {
-  background: #013440;
+  background: #40b3df;
   color: white;
   text-shadow: none; }
 
@@ -294,7 +294,7 @@ textarea {
   position: relative; }
 
 .row {
-  width: 90em;
+  width: 70em;
   max-width: 100%;
   margin: 0 auto; }
   .row .one {
@@ -392,25 +392,25 @@ h4, .delta,
 h5, .epsilon,
 h6, .zeta {
   font-family: inherit;
-  color: #013440; }
+  color: #17649a; }
 
 h1, .alpha {
-  font-size: 2.6em; }
+  font-size: 1.8em; }
 
 h2, .beta {
-  font-size: 2.4em; }
+  font-size: 1.6em; }
 
 h3, .gamma {
-  font-size: 2.2em; }
+  font-size: 1.5em; }
 
 h4, .delta {
-  font-size: 2em; }
+  font-size: 1.4em; }
 
 h5, .epsilon {
-  font-size: 1.8em; }
+  font-size: 1.3em; }
 
 h6, .zeta {
-  font-size: 1.8em; }
+  font-size: 1.3em; }
 
 p {
   font-size: 1.4em; }
@@ -428,8 +428,8 @@ a {
     outline: none; }
 
 .button {
-  font-size: 1.4em;
-  background: #0099cc;
+  font-size: 1em;
+  background: #40b3df;
   border-bottom: 1px solid #bfbfbf;
   border: 1px solid #e6e6e6;
   color: white;
@@ -443,27 +443,27 @@ a {
   .button:hover, .button:active, .button:visited {
     text-decoration: none; }
   .button:hover {
-    background: #004d66; }
+    background: #1b7a9e; }
   .tiny.button {
     padding: 5px 5px;
-    font-size: 1em; }
+    font-size: 0.8em; }
   .small.button {
     padding: 7px 10px;
-    font-size: 1.2em; }
+    font-size: 0.9em; }
   .medium.button {
     padding: 10px 15px;
-    font-size: 1.4em; }
+    font-size: 1em; }
   .big.button {
     padding: 15px 30px;
-    font-size: 1.8em; }
+    font-size: 1.2em; }
   .primary.button {
-    background: #0099cc; }
+    background: #40b3df; }
     .primary.button:hover, .primary.button:active, .primary.button:focus {
-      background: #0086b3; }
+      background: #2aaadb; }
   .secondary.button {
-    background: deepskyblue; }
+    background: #6cc4e6; }
     .secondary.button:hover, .secondary.button:active, .secondary.button:focus {
-      background: #00ace6; }
+      background: #56bce3; }
   .success.button {
     background: green; }
     .success.button:hover, .success.button:active, .success.button:focus {
@@ -514,7 +514,7 @@ a {
 
 .vertical-navigation > li {
   display: block;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #eeeeee;
   padding: 10px;
   margin-left: 0; }
 
@@ -553,11 +553,11 @@ a {
   content: " »"; }
 
 .pagination > li {
-  background: #002635; }
+  background: #17649a; }
   .pagination > li.current, .pagination > li:hover {
-    background: #ab1a25; }
+    background: #a8cb17; }
   .pagination > li > a {
-    color: #d97925; }
+    color: #eeeeee; }
 
 /* mod */
 .mod {
@@ -615,4 +615,26 @@ a {
 .my-module > :last-child {
   margin-bottom: 0; }
 
+body {
+  -webkit-transform: all .3s ease-in-out;
+  -moz-transform: all .3s ease-in-out;
+  -ms-transform: all .3s ease-in-out;
+  -o-transform: all .3s ease-in-out;
+  transform: all .3s ease-in-out; }
+
+.wrapper {
+  margin: 2em auto; }
+
 /* Media Queries for various screen sizes */
+@media screen and (min-width: 61em) {
+  body {
+    font-size: 140%; } }
+@media screen and (max-width: 60em) {
+  body {
+    font-size: 130%; } }
+@media screen and (max-width: 48em) {
+  body {
+    font-size: 115%; } }
+@media screen and (max-width: 32em) {
+  body {
+    font-size: 100%; } }

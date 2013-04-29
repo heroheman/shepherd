@@ -9,17 +9,17 @@ $lightergrey    : lighten($black, 90%);
 $white          : rgb(255,255,255);
 
 // functional variables:
-$primary1:  rgb(0, 38, 53);
-$primary2:  rgb(1, 52, 64);
-$primary3:  rgb(171, 26, 37);
-$primary4:  rgb(217, 121, 37);
-$primary5:  rgb(239, 231, 190);
+$primary1:  rgb(23, 100, 154);  //darkblue
+$primary2:  rgb(64, 179, 223);  //lightblue
+$primary3:  rgb(168, 203, 23);  //green
+$primary4:  rgb(238, 238, 238); //grey
+$primary5:  $white; //beige
 
 $success-color: green;
 $alert-color:   red;
 
 // Grid
-$grid-max-size: 90em;
+$grid-max-size: 70em;
 $grid-orientation: 0 auto; // centered: 0 auto;
 
 // Flags
@@ -27,14 +27,13 @@ $is-rem: false;
 
 // Theme Standards
 $text-color:    $black;
-$bg-color:      $white;
-$head-color:    $primary2;
-$link-color:    $primary3;
-$border-color:  $lightergrey;
-$code-bg-color: $bg-color;
-
-$btn-text:      $white;
-$btn-primary:   #09c;
+$bg-color:      $primary5;
+$head-color:    $primary1;
+$link-color:    $primary2;
+$border-color:  $primary4;
+$code-bg-color: $primary4;
+$btn-text:      $primary5;
+$btn-primary:   $primary2;
 $btn-second:    lighten($btn-primary, 10%);
 $btn-success:   $success-color;
 $btn-alert:     $alert-color;
@@ -48,12 +47,12 @@ $font-main:         Helvetica, Arial, sans-serif;
 $font-heading:      inherit;
 $font-button:       inherit;
 $font-mono:         monospace, sans-serif;
-$font-size-h1:      2.6;
-$font-size-h2:      2.4;
-$font-size-h3:      2.2;
-$font-size-h4:      2.0;
-$font-size-h5:      1.8;
-$font-size-h6:      1.6;
+$font-size-h1:      1.8;
+$font-size-h2:      1.6;
+$font-size-h3:      1.5;
+$font-size-h4:      1.4;
+$font-size-h5:      1.3;
+$font-size-h6:      1.2;
 $font-size-small:   0.9;
 
 // Links

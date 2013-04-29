@@ -1,5 +1,5 @@
 %btn{
-    @include font-size(1.4);
+    @include font-size(1.0);
     // box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4), 0 5px 5px rgba(0, 0, 0, .2);
     background: $btn-primary;
     border-bottom: 1px solid $lightgrey;
@@ -21,10 +21,10 @@
         background: darken($btn-primary, 20%);
     }
 
-    &.tiny   { padding: 5px 5px;    @include font-size(1); }
-    &.small  { padding: 7px 10px;   @include font-size(1.2); }
-    &.medium { padding: 10px 15px;  @include font-size(1.4); }
-    &.big    { padding: 15px 30px;  @include font-size(1.8); }
+    &.tiny   { padding: 5px 5px;    @include font-size(0.8); }
+    &.small  { padding: 7px 10px;   @include font-size(0.9); }
+    &.medium { padding: 10px 15px;  @include font-size(1.0); }
+    &.big    { padding: 15px 30px;  @include font-size(1.2); }
 
     &.primary    { background: $btn-primary; @include hoverActiveFocus(background, darken($btn-primary, 5%));}
     &.secondary  { background: $btn-second;  @include hoverActiveFocus(background, darken($btn-second, 5%));}

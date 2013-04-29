@@ -8,6 +8,14 @@
 // States
 
 // $GENERAL
+    body{
+        -webkit-transform: all .3s ease-in-out;
+        -moz-transform: all .3s ease-in-out;
+        -ms-transform: all .3s ease-in-out;
+        -o-transform: all .3s ease-in-out;
+        transform: all .3s ease-in-out;
+    }
+    .wrapper{ margin: 2em auto; }
 // $TYPOGRAPHY
 // $LAYOUT
 
