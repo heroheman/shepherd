@@ -66,6 +66,12 @@ $link-weight         : bold;
 $border-radius: 5;
 $base-margin:   20;
 
+// Media Queries
+$smart-portrait     : 32em;
+$smart-landscape    : 48em;
+$tablet             : 60em;
+$large              : $tablet+1;
+
 // Marked Text
 $mark-bg            : $primary2;
 $mark-color         : white;

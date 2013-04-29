@@ -4,16 +4,16 @@
 
 
 // $STATES
-@media screen and (min-width: 61em) {
+@media screen and (min-width: $large) {
     body{ font-size: 140%; }
 }
-@media screen and (max-width: 60em) {
+@media screen and (max-width: $tablet) {
     body{ font-size: 130%; }
 }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: $smart-landscape) {
     body{ font-size: 115%; }
 }
-@media screen and (max-width: 32em) {
+@media screen and (max-width: $smart-portrait) {
     body{ font-size: 100%; }
 }
 
