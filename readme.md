@@ -1,4 +1,4 @@
-**Version 0.7**
+**Version 0.7.1**
 
 ## Introduction
 Shepherd Framework is my attempt of creating a CSS starter kit for my daily work. I try to include Best Practices from the Frontend Development Community without the bloat. Also its focused on Responsive Webdesign - but its also usable for old school websites.
@@ -29,5 +29,6 @@ Shepherd is designed with [Compass](http://compass-style.org) in mind, but its n
 - include external libraries with submodules
 - add more "Smacss"y styling
 - read more about BEM and try a BEM branch
+- Theming
 
 *PS: English is not my native language, please excuse grammar and typo*
