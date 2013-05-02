@@ -9,7 +9,6 @@ small{ small{ @include font-size($font-size-small); } }
 del {text-decoration: line-through;}
 abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
 
-
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
 
 // Code Examples
@@ -29,13 +28,11 @@ ol, ul{
         margin-left: $base-margin +px;
     }
 }
-
 // Definition list
 dl{
     dt{font-weight: bold;}
     dd{}
 }
-
 // Base Margin, set up default at variables.scss
 p, dl, hr,
 h1, h2, h3, h4, h5, h6,
@@ -49,7 +46,6 @@ figure {
 
 // Blockquotes
 // see:  html5doctor.com/blockquote-q-cite
-
 q{
     quotes:"‘" "’" "“" "”";
     &:before{ content:"‘"; content:open-quote; }
@@ -95,7 +91,6 @@ img[height]{
 table   { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%; }
 th      { font-weight: bold; vertical-align: bottom; }
 td      { font-weight: normal; vertical-align: top; }
-
 
 // Make sure sup and sub don't screw with your line-heights
 // See Comments here: gist.github.com/413930
