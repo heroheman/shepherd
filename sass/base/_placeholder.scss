@@ -1,7 +1,6 @@
-// Placeholder Helper
-/* $TODO: split in separate files? */
+// Placeholder Helper Collection
 
-/* Offscreen text */
+// Offscreen text
 // http://css-tricks.com/redesigning-with-sass/
 %linkTextOffscreen{
     text-indent: -9999px;
@@ -11,3 +10,6 @@
     font-size: 0;
     text-align: start;
 }
+
+// Centered Element
+%centered { text-align: center; }

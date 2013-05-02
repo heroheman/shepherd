@@ -38,6 +38,14 @@ $btn-second:    lighten($btn-primary, 10%);
 $btn-success:   $success-color;
 $btn-alert:     $alert-color;
 
+// Module & Object Standards
+// Nav Module
+$nav-bg:        #eee;
+// Pagination
+$pag-color:     $primary4;
+$pag-bg:        $primary1;
+$pag-bg-active: $primary3;
+
 
 // Typography
 $font-size:         62.5%;

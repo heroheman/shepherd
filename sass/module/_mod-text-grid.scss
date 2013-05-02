@@ -1,3 +1,25 @@
+// Thumb Text Grid Module - Placeholder
+// Example: .my-ttgrid{ @extend %thumb-text-grid; }
+
+// Usage:
+//         <ul class="list img-list">
+//             <li>
+//                 <a href="#" class="inner">
+//                     <div class="li-img">
+//                         <img src="path/to/image.jpg" alt="Image Alt Text" />
+//                     </div>
+//                     <div class="li-text">
+//                         <h4 class="li-head">Title of Content</h4>
+//                         <p class="li-sub">Summary of content</p>
+//                     </div>
+//                 </a>
+//             </li>
+//             ... repeat ...
+//         </ul>
+
+// Source: http://codepen.io/bradfrost/pen/evwgx
+
+
 %thumb-text-grid {
     li {
         border-bottom: 1px solid #ccc;

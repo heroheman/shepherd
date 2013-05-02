@@ -32,13 +32,13 @@
 
 %pagination-theme-simple{
     > li{
-        background: $primary1;
+        background: $pag-bg;
         &.current,
         &:hover{
-            background: $primary3;
+            background: $pag-bg-active;
         }
         > a{
-            color: $primary4;
+            color: $pag-color;
         }
     }
 }

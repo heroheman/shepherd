@@ -1,3 +1,8 @@
+/*
+ *    Basic Elements,
+ *    pre-styled - combined with best-practices
+ */
+
 strong, th{ font-weight: bold; }
 em{ font-weight: italic; }
 small{ small{ @include font-size($font-size-small); } }
@@ -15,14 +20,13 @@ pre {
     white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
     word-wrap: break-word; /* IE */
 }
-code{}
 
 // Base List Styling
 ol { list-style: decimal; }
 ul { list-style: disc; }
 ol, ul{
     li{
-        margin-left: 20px;
+        margin-left: $base-margin +px;
     }
 }
 
