@@ -1,3 +1,5 @@
 .sass-cache/
 sftp-config.json
 css/style.css
+.DS_Store
+sass/config.rb
