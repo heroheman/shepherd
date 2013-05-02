@@ -11,13 +11,12 @@
     text-align: start;
 }
 
-
 // Highlighted Elements
-%is-highlighted{
-    background: $highlight-bg;
-}
+%is-highlighted{ background: $highlight-bg; }
 
 // Positioning
 %is-centered { text-align: center; }
 %is-left{ float: left; }
 %is-right{ float: right; }
+
+%is-round{ border-radius: $border-radius +px; }

@@ -38,7 +38,7 @@
     &.alert      { background: $btn-alert;   @include hoverActiveFocus(background, darken($btn-alert, 5%));}
 
     &.square    {  }
-    &.radius    { border-radius: $border-radius +px; }
+    &.radius    { @extend %is-round; }
     &.pill     { border-radius: 1000px; }
 }
 
