@@ -22,10 +22,14 @@
 .button{ @extend %btn; }
 .button-group{ @extend %btn-group; }
 
+.top-bar{@extend %top-bar};
+
 // $MODULES
 
 .my-module{
     @extend %island;
+    @extend %is-highlighted;
+    h1,h2,h3,h4,h5{ margin-top: 0; }
 }
 
 .vertical-navigation{

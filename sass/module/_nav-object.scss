@@ -38,6 +38,21 @@
     }
 }
 
+%top-bar{
+    .branding { margin-left: 0; }
+    > ul{
+        @extend %main-nav;
+        padding: 0;
+        margin-top: 0;
+    }
+    .meta{ @extend %is-right; }
+    @media screen and (max-width: $smart-portrait) {
+        ul > li{ display: block; }
+        ul > li > a{ width: 100%; }
+        .meta{ float: left; }
+    }
+}
+
 // Breadcrumb
 %breadcrumb {
     li:before{ content:"» " }

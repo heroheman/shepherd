@@ -25,20 +25,24 @@ $grid-orientation: 0 auto; // centered: 0 auto;
 // Flags
 $is-rem: false;
 
-// Theme Standards
+// Layout Defaults
 $text-color:    $black;
-$bg-color:      $primary5;
 $head-color:    $primary1;
 $link-color:    $primary2;
+$bg-color:      $primary5;
 $border-color:  $primary4;
 $code-bg-color: $primary4;
+
 $btn-text:      $primary5;
 $btn-primary:   $primary2;
 $btn-second:    lighten($btn-primary, 10%);
 $btn-success:   $success-color;
 $btn-alert:     $alert-color;
 
-// Module & Object Standards
+$highlight-bg:  $primary3;
+
+
+// Module & Object Defaults
 // Nav Module
 $nav-bg:        #eee;
 // Pagination
@@ -50,9 +54,9 @@ $pag-bg-active: $primary3;
 // Typography
 $font-size:         62.5%;
 $font-size-body:    1.4;
-$line-height:       1.6;
-$font-main:         Helvetica, Arial, sans-serif;
-$font-heading:      inherit;
+$line-height:       $font-size-body*1.5;
+$font-main:         "Droid Serif", Helvetica, Arial, sans-serif;
+$font-heading:      "Droid Sans", Georgia, serif;
 $font-button:       inherit;
 $font-mono:         monospace, sans-serif;
 $font-size-h1:      1.8;
