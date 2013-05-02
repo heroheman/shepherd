@@ -80,6 +80,12 @@ img{
     vertical-align: middle;
 }
 
+// no max width if width and height is defined html attributes
+img[width],
+img[height]{
+    max-width:none;
+}
+
 /* Tables */
 // tables still need cellspacing="0" in the markup
 table   { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: inherit; font: 100%; }

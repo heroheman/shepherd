@@ -5,9 +5,9 @@
 //    $mixins
 @import "base/mixins";
 //    $reset
-@import "base/reset";
+// @import "base/reset";
 //    instead of a reset you can also use normalizing
-//    @import "base/normalize";
+   @import "base/normalize";
 //    $clearfix
 @import "base/clearfix";
 //    $site - basic site elements (html, body, box-model)
