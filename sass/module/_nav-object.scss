@@ -34,6 +34,7 @@
 
 %vertical{
     @extend %nav;
+    margin-left: 0;
     >li{
         display: block;
         border-top: 1px solid $border-color;
